@@ -29,625 +29,278 @@
   --radius: 14px;
   --radius-sm: 8px;
 }
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior:smooth; }
+body { background:var(--bg); color:var(--text); font-family:var(--font-jp); min-height:100vh; overscroll-behavior:none; }
 
-* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+/* VIEWS */
+.view { display:none; flex-direction:column; min-height:100vh; }
+.view.active { display:flex; }
 
-html { scroll-behavior: smooth; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-jp);
-  min-height: 100vh;
-  overscroll-behavior: none;
-}
-
-/* ══════════════════════════════
-   VIEWS
-══════════════════════════════ */
-.view { display: none; flex-direction: column; min-height: 100vh; }
-.view.active { display: flex; }
-
-/* ══════════════════════════════
-   HEADER
-══════════════════════════════ */
+/* HEADER */
 .app-header {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  padding: 0 16px;
-  height: 52px;
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 12px;
+  position:sticky; top:0; z-index:100;
+  background:var(--surface); border-bottom:1px solid var(--border);
+  padding:0 16px; height:52px;
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
 }
+.header-logo { font-family:var(--font-en); font-weight:700; font-size:15px; letter-spacing:2px; color:var(--accent); }
+.header-stats { display:flex; gap:12px; align-items:center; }
+.hstat { display:flex; flex-direction:column; align-items:center; font-family:var(--font-en); }
+.hstat-val { font-size:15px; font-weight:600; line-height:1; }
+.hstat-label { font-size:9px; color:var(--text-muted); letter-spacing:1px; margin-top:1px; }
+.hstat.ok .hstat-val { color:var(--accent); }
+.hstat.ng .hstat-val { color:var(--red); }
+.hstat.streak .hstat-val { color:var(--yellow); }
 
-.header-logo {
-  font-family: var(--font-en);
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: var(--accent);
+/* HOME */
+#homeView { background:var(--bg); }
+.home-top { padding:16px 16px 10px; display:flex; flex-direction:column; gap:10px; }
+
+/* Progress */
+.overall-progress { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; }
+.op-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.op-title { font-size:11px; color:var(--text-muted); letter-spacing:1px; font-family:var(--font-en); font-weight:500; }
+.op-count { font-size:11px; color:var(--text-dim); font-family:var(--font-en); }
+.op-bar-bg { height:6px; background:var(--surface3); border-radius:3px; overflow:hidden; margin-bottom:8px; }
+.op-bar-fill { height:100%; background:linear-gradient(90deg,var(--accent),#7dff33); border-radius:3px; transition:width 0.5s ease; }
+.op-legend { display:flex; gap:12px; }
+.legend-item { display:flex; align-items:center; gap:4px; font-size:10px; color:var(--text-muted); font-family:var(--font-en); }
+.legend-dot { width:8px; height:8px; border-radius:50%; }
+.legend-dot.ok { background:var(--accent); }
+.legend-dot.close { background:var(--yellow); }
+.legend-dot.ng { background:var(--red); }
+.legend-dot.todo { background:var(--surface3); border:1px solid var(--border2); }
+
+/* Sound toggle */
+.sound-row { display:flex; align-items:center; justify-content:space-between; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:12px 16px; }
+.sound-label { font-size:13px; color:var(--text); display:flex; align-items:center; gap:8px; }
+.sound-label .sound-icon { font-size:16px; }
+.toggle-wrap { position:relative; width:44px; height:24px; }
+.toggle-wrap input { opacity:0; width:0; height:0; }
+.toggle-slider {
+  position:absolute; inset:0; background:var(--border2); border-radius:12px; cursor:pointer; transition:.2s;
 }
-
-.header-actions { display: flex; gap: 8px; align-items: center; }
-
-.icon-btn {
-  width: 36px; height: 36px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--surface2);
-  color: var(--text-dim);
-  font-size: 16px;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.15s;
+.toggle-slider:before {
+  content:''; position:absolute; width:18px; height:18px; left:3px; top:3px;
+  background:#fff; border-radius:50%; transition:.2s;
 }
-.icon-btn:hover { border-color: var(--border2); color: var(--text); }
+input:checked + .toggle-slider { background:var(--accent); }
+input:checked + .toggle-slider:before { transform:translateX(20px); background:#0f0f12; }
 
-.header-stats {
-  display: flex; gap: 12px; align-items: center;
-}
-
-.hstat {
-  display: flex; flex-direction: column; align-items: center;
-  font-family: var(--font-en);
-}
-.hstat-val { font-size: 15px; font-weight: 600; line-height: 1; }
-.hstat-label { font-size: 9px; color: var(--text-muted); letter-spacing: 1px; margin-top: 1px; }
-.hstat.ok .hstat-val { color: var(--accent); }
-.hstat.ng .hstat-val { color: var(--red); }
-.hstat.streak .hstat-val { color: var(--yellow); }
-
-/* ══════════════════════════════
-   HOME VIEW
-══════════════════════════════ */
-#homeView { background: var(--bg); }
-
-.home-top {
-  padding: 20px 16px 12px;
-  display: flex; flex-direction: column; gap: 12px;
-}
-
-/* Overall progress bar */
-.overall-progress {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 14px 16px;
-}
-
-.op-top {
-  display: flex; justify-content: space-between; align-items: center;
-  margin-bottom: 8px;
-}
-.op-title { font-size: 11px; color: var(--text-muted); letter-spacing: 1px; font-family: var(--font-en); font-weight: 500; }
-.op-count { font-size: 11px; color: var(--text-dim); font-family: var(--font-en); }
-
-.op-bar-bg {
-  height: 6px; background: var(--surface3); border-radius: 3px; overflow: hidden;
-  margin-bottom: 8px;
-}
-.op-bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent), #7dff33);
-  border-radius: 3px;
-  transition: width 0.5s ease;
-}
-
-.op-legend {
-  display: flex; gap: 12px;
-}
-.legend-item {
-  display: flex; align-items: center; gap: 4px;
-  font-size: 10px; color: var(--text-muted); font-family: var(--font-en);
-}
-.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
-.legend-dot.ok { background: var(--accent); }
-.legend-dot.close { background: var(--yellow); }
-.legend-dot.ng { background: var(--red); }
-.legend-dot.todo { background: var(--surface3); border: 1px solid var(--border2); }
-
-/* Filter & Start bar */
-.home-controls {
-  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
-}
-
-.filter-chip {
-  padding: 6px 14px;
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text-muted);
-  font-family: var(--font-en);
-  font-size: 11px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.15s;
-  letter-spacing: 0.5px;
-}
-.filter-chip:hover { border-color: var(--border2); color: var(--text); }
-.filter-chip.on-all { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
-.filter-chip.on-anime { border-color: #ff9de2; color: #ff9de2; background: rgba(255,157,226,0.1); }
-.filter-chip.on-biz { border-color: var(--blue); color: var(--blue); background: var(--blue-dim); }
-
-.review-chip {
-  padding: 6px 14px;
-  border-radius: 20px;
-  border: 1px solid var(--red);
-  background: var(--red-dim);
-  color: var(--red);
-  font-family: var(--font-en);
-  font-size: 11px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.15s;
-  letter-spacing: 0.5px;
-  margin-left: auto;
-}
-.review-chip:hover { background: rgba(255,95,95,0.2); }
-.review-chip.disabled { opacity: 0.35; pointer-events: none; }
-
-/* Start buttons */
-.start-btns {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
-}
-
+/* Start buttons — 3 in a row */
+.start-btns { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; }
 .start-btn {
-  padding: 16px 12px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
-  font-family: var(--font-jp);
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.15s;
-  display: flex; flex-direction: column; align-items: center; gap: 5px;
+  padding:14px 6px; border-radius:var(--radius); border:1px solid var(--border);
+  background:var(--surface); color:var(--text); font-family:var(--font-jp); font-size:13px; font-weight:500;
+  cursor:pointer; transition:all 0.15s; display:flex; flex-direction:column; align-items:center; gap:4px;
 }
-.start-btn .start-icon { font-size: 24px; }
-.start-btn .start-sub { font-size: 10px; color: var(--text-muted); font-family: var(--font-en); letter-spacing: 0.5px; }
-.start-btn.primary { border-color: var(--accent); background: var(--accent-dim); color: var(--accent); }
-.start-btn.primary .start-sub { color: var(--accent); opacity: 0.7; }
-.start-btn.primary:hover { background: rgba(168,255,87,0.2); }
-.start-btn.resume-btn-home { border-color: var(--yellow); background: var(--yellow-dim); color: var(--yellow); }
-.start-btn.resume-btn-home .start-sub { color: var(--yellow); opacity: 0.7; }
-.start-btn.resume-btn-home:hover { background: rgba(255,197,66,0.2); }
-.start-btn:not(.primary):not(.resume-btn-home):hover { border-color: var(--border2); background: var(--surface2); }
+.start-btn .s-icon { font-size:20px; }
+.start-btn .s-sub { font-size:9px; color:var(--text-muted); font-family:var(--font-en); letter-spacing:0.5px; }
+.start-btn.s-primary { border-color:var(--accent); background:var(--accent-dim); color:var(--accent); }
+.start-btn.s-primary .s-sub { color:var(--accent); opacity:.7; }
+.start-btn.s-primary:hover { background:rgba(168,255,87,0.2); }
+.start-btn.s-resume { border-color:var(--yellow); background:var(--yellow-dim); color:var(--yellow); }
+.start-btn.s-resume .s-sub { color:var(--yellow); opacity:.7; }
+.start-btn.s-resume:hover { background:rgba(255,197,66,0.2); }
+.start-btn.s-review { border-color:var(--red); background:var(--red-dim); color:var(--red); }
+.start-btn.s-review .s-sub { color:var(--red); opacity:.7; }
+.start-btn.s-review:hover { background:rgba(255,95,95,0.2); }
+.start-btn.s-review.disabled { opacity:.35; pointer-events:none; }
+.start-btn:not(.s-primary):not(.s-resume):not(.s-review):hover { border-color:var(--border2); background:var(--surface2); }
+
+/* Calendar */
+.calendar-wrap { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; }
+.cal-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+.cal-title { font-size:11px; color:var(--text-muted); letter-spacing:1px; font-family:var(--font-en); font-weight:500; }
+.cal-mode-btn {
+  font-size:10px; padding:3px 10px; border-radius:10px;
+  border:1px solid var(--border2); background:transparent; color:var(--text-muted);
+  font-family:var(--font-en); cursor:pointer; transition:all .15s; letter-spacing:.5px;
+}
+.cal-mode-btn:hover { border-color:var(--accent); color:var(--accent); }
+
+/* Week view */
+.cal-week { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; }
+.cal-day { display:flex; flex-direction:column; align-items:center; gap:3px; }
+.cal-day-label { font-size:9px; color:var(--text-muted); font-family:var(--font-en); letter-spacing:.5px; }
+.cal-cell {
+  width:100%; aspect-ratio:1; border-radius:6px;
+  background:var(--surface3); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-en); font-size:11px; font-weight:600;
+  color:var(--text-muted); cursor:default; transition:all .15s; position:relative;
+}
+.cal-cell.today { border-color:var(--border2); color:var(--text); }
+.cal-cell.has-data { color:#0f0f12; cursor:pointer; }
+.cal-cell.has-data:hover { filter:brightness(1.1); }
+.cal-cell[data-count="0"] { background:var(--surface3); }
+
+/* Month view */
+.cal-month { display:grid; grid-template-columns:repeat(7,1fr); gap:3px; }
+.cal-month-label { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.cal-month-name { font-size:12px; font-family:var(--font-en); color:var(--text-dim); letter-spacing:1px; }
+.cal-month-nav { display:flex; gap:6px; }
+.cal-nav-btn { background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:14px; padding:2px 6px; border-radius:4px; }
+.cal-nav-btn:hover { color:var(--text); }
+.cal-dow { font-size:8px; color:var(--text-muted); font-family:var(--font-en); text-align:center; padding:2px 0; }
+.cal-mcell {
+  aspect-ratio:1; border-radius:4px;
+  background:var(--surface3);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-en); font-size:10px; color:var(--text-muted);
+  position:relative; cursor:default;
+}
+.cal-mcell.has-data { cursor:pointer; color:#0f0f12; font-weight:600; }
+.cal-mcell.today-m { outline:1px solid var(--accent); }
+.cal-mcell.other-month { opacity:.3; }
+.cal-tooltip {
+  position:absolute; bottom:calc(100% + 4px); left:50%; transform:translateX(-50%);
+  background:var(--surface3); border:1px solid var(--border2);
+  border-radius:6px; padding:3px 8px; white-space:nowrap;
+  font-size:10px; color:var(--text); font-family:var(--font-en);
+  pointer-events:none; z-index:10; display:none;
+}
+.cal-mcell:hover .cal-tooltip { display:block; }
+.cal-cell:hover .cal-tooltip { display:block; }
+
+/* Section header */
+.section-header { padding:0 16px 8px; font-size:11px; color:var(--text-muted); letter-spacing:1px; font-family:var(--font-en); font-weight:500; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.section-count { background:var(--surface2); border:1px solid var(--border); border-radius:10px; padding:1px 8px; font-size:10px; }
+
+/* Sort chips */
+.sort-chips { display:flex; gap:6px; margin-left:auto; }
+.sort-chip { padding:3px 10px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--text-muted); font-family:var(--font-en); font-size:9px; cursor:pointer; transition:all .15s; letter-spacing:.5px; }
+.sort-chip:hover { border-color:var(--border2); color:var(--text); }
+.sort-chip.active { border-color:var(--accent); color:var(--accent); background:var(--accent-dim); }
 
 /* Question list */
-.section-header {
-  padding: 0 16px 8px;
-  font-size: 11px;
-  color: var(--text-muted);
-  letter-spacing: 1px;
-  font-family: var(--font-en);
-  font-weight: 500;
-  display: flex; align-items: center; gap: 8px;
-}
-.section-count {
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1px 8px;
-  font-size: 10px;
-}
+.q-list { padding:0 16px 40px; display:flex; flex-direction:column; gap:4px; }
+.q-row { display:flex; align-items:center; gap:10px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-sm); padding:10px 12px; cursor:pointer; transition:all .12s; position:relative; overflow:hidden; }
+.q-row:hover { border-color:var(--border2); background:var(--surface2); }
+.q-row::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; }
+.q-row.status-ok::before { background:var(--accent); }
+.q-row.status-close::before { background:var(--yellow); }
+.q-row.status-ng::before { background:var(--red); }
+.q-row.status-todo::before { background:var(--border); }
+.q-num { font-family:var(--font-en); font-size:10px; color:var(--text-muted); min-width:26px; text-align:right; }
+.q-theme-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+.dot-anime { background:#ff9de2; }
+.dot-biz { background:var(--blue); }
+.q-ja { font-size:13px; color:var(--text); flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-family:var(--font-jp); }
+.q-badge { font-family:var(--font-en); font-size:9px; font-weight:600; padding:2px 7px; border-radius:10px; flex-shrink:0; letter-spacing:.5px; }
+.badge-ok { background:var(--accent-dim); color:var(--accent); }
+.badge-close { background:var(--yellow-dim); color:var(--yellow); }
+.badge-ng { background:var(--red-dim); color:var(--red); }
+.badge-todo { color:var(--border2); font-size:10px; }
 
-.q-list {
-  padding: 0 16px 32px;
-  display: flex; flex-direction: column; gap: 4px;
-}
+/* TRAIN VIEW */
+#trainView { background:var(--bg); }
+.train-header { position:sticky; top:0; z-index:100; background:var(--surface); border-bottom:1px solid var(--border); padding:10px 14px; display:flex; align-items:center; gap:10px; }
+.home-back-btn { width:34px; height:34px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text-dim); font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .15s; flex-shrink:0; }
+.home-back-btn:hover { border-color:var(--border2); color:var(--text); }
+.train-progress-wrap { flex:1; }
+.train-progress-bar-bg { height:5px; background:var(--border); border-radius:3px; overflow:hidden; margin-bottom:4px; }
+.train-progress-bar-fill { height:100%; background:linear-gradient(90deg,var(--accent),#7dff33); border-radius:3px; transition:width 0.4s ease; }
+.train-progress-text { font-family:var(--font-en); font-size:10px; color:var(--text-muted); letter-spacing:.5px; }
+.train-session-stats { display:flex; gap:8px; align-items:center; }
+.tsstat { display:flex; flex-direction:column; align-items:center; font-family:var(--font-en); font-size:9px; color:var(--text-muted); gap:1px; }
+.tsstat-val { font-size:13px; font-weight:600; line-height:1; }
+.tsstat.ok .tsstat-val { color:var(--accent); }
+.tsstat.ng .tsstat-val { color:var(--red); }
 
-.q-row {
-  display: flex; align-items: center; gap: 10px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 10px 12px;
-  cursor: pointer;
-  transition: all 0.12s;
-  position: relative;
-  overflow: hidden;
-}
+.train-body { flex:1; padding:16px 14px 100px; display:flex; flex-direction:column; gap:12px; max-width:640px; width:100%; margin:0 auto; }
 
-.q-row:hover { border-color: var(--border2); background: var(--surface2); }
+.q-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; animation:slideUp .2s ease; }
+@keyframes slideUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+.q-card-tag { padding:8px 14px; display:flex; align-items:center; gap:8px; border-bottom:1px solid var(--border); font-family:var(--font-en); font-size:10px; letter-spacing:1px; font-weight:500; }
+.tag-anime { color:#ff9de2; }
+.tag-biz { color:var(--blue); }
+.tag-sub { margin-left:auto; color:var(--text-muted); font-size:9px; font-weight:400; }
+.q-card-body { padding:22px 16px 18px; }
+.q-ja-main { font-family:var(--font-jp); font-size:21px; font-weight:400; line-height:1.75; color:var(--text); margin-bottom:6px; word-break:break-all; }
+.q-ja-speak-btn { background:none; border:none; cursor:pointer; color:var(--text-muted); font-size:15px; padding:2px 4px; transition:color .15s; border-radius:4px; vertical-align:middle; margin-left:4px; }
+.q-ja-speak-btn:hover { color:var(--accent); }
 
-.q-row::before {
-  content: '';
-  position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
-}
-.q-row.status-ok::before { background: var(--accent); }
-.q-row.status-close::before { background: var(--yellow); }
-.q-row.status-ng::before { background: var(--red); }
-.q-row.status-todo::before { background: var(--border); }
+.mic-area { display:flex; flex-direction:column; align-items:center; gap:10px; padding:18px 0 6px; }
+.mic-btn { width:68px; height:68px; border-radius:50%; border:2px solid var(--border); background:var(--surface2); color:var(--text-muted); font-size:26px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .2s; }
+.mic-btn:hover { border-color:var(--accent); color:var(--accent); }
+.mic-btn.rec { border-color:var(--red); color:var(--red); animation:ripple 1s infinite; }
+@keyframes ripple { 0%,100%{box-shadow:0 0 0 0 rgba(255,95,95,.35)} 50%{box-shadow:0 0 0 10px rgba(255,95,95,0)} }
+.mic-hint { font-family:var(--font-en); font-size:10px; color:var(--text-muted); letter-spacing:1.5px; }
+.transcript { width:100%; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius-sm); padding:10px 12px; font-family:var(--font-en); font-size:14px; line-height:1.6; color:var(--text); display:none; min-height:42px; }
+.transcript.show { display:block; }
 
-.q-num {
-  font-family: var(--font-en);
-  font-size: 10px;
-  color: var(--text-muted);
-  min-width: 26px;
-  text-align: right;
-}
+.reveal-btn { width:100%; padding:13px; border-radius:var(--radius); border:1px solid var(--border2); background:var(--surface2); color:var(--text-dim); font-family:var(--font-jp); font-size:13px; cursor:pointer; transition:all .15s; letter-spacing:.5px; }
+.reveal-btn:hover { border-color:var(--accent); color:var(--accent); }
 
-.q-theme-dot {
-  width: 6px; height: 6px; border-radius: 50%;
-  flex-shrink: 0;
-}
-.dot-anime { background: #ff9de2; }
-.dot-biz { background: var(--blue); }
+.answer-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; display:none; animation:slideUp .2s ease; }
+.answer-card.show { display:block; }
+.answer-top { padding:9px 14px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:8px; background:rgba(168,255,87,.04); }
+.answer-top-label { font-family:var(--font-en); font-size:10px; letter-spacing:1.5px; font-weight:600; color:var(--accent); }
+.en-speak-btn { margin-left:auto; background:none; border:none; cursor:pointer; color:var(--text-muted); font-size:16px; padding:3px 6px; border-radius:6px; transition:color .15s; }
+.en-speak-btn:hover { color:var(--accent); }
+.answer-body { padding:18px 16px; }
+.en-text { font-family:var(--font-en); font-size:17px; font-weight:400; line-height:1.8; color:var(--text); margin-bottom:18px; }
 
-.q-ja {
-  font-size: 13px;
-  color: var(--text);
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: var(--font-jp);
-}
-
-.q-badge {
-  font-family: var(--font-en);
-  font-size: 9px;
-  font-weight: 600;
-  padding: 2px 7px;
-  border-radius: 10px;
-  flex-shrink: 0;
-  letter-spacing: 0.5px;
-}
-.badge-ok { background: var(--accent-dim); color: var(--accent); }
-.badge-close { background: var(--yellow-dim); color: var(--yellow); }
-.badge-ng { background: var(--red-dim); color: var(--red); }
-.badge-todo { color: var(--border2); font-size: 10px; }
-
-/* ══════════════════════════════
-   TRAINING VIEW
-══════════════════════════════ */
-#trainView { background: var(--bg); }
-
-.train-header {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  padding: 10px 14px;
-  display: flex; align-items: center; gap: 10px;
-}
-
-.home-back-btn {
-  width: 34px; height: 34px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--text-dim);
-  font-size: 16px;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.15s;
-  flex-shrink: 0;
-}
-.home-back-btn:hover { border-color: var(--border2); color: var(--text); }
-
-.train-progress-wrap { flex: 1; }
-.train-progress-bar-bg {
-  height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 4px;
-}
-.train-progress-bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent), #7dff33);
-  border-radius: 3px;
-  transition: width 0.4s ease;
-}
-.train-progress-text {
-  font-family: var(--font-en);
-  font-size: 10px;
-  color: var(--text-muted);
-  letter-spacing: 0.5px;
-}
-
-.train-session-stats {
-  display: flex; gap: 8px; align-items: center;
-}
-
-.tsstat {
-  display: flex; flex-direction: column; align-items: center;
-  font-family: var(--font-en); font-size: 9px; color: var(--text-muted);
-  gap: 1px;
-}
-.tsstat-val { font-size: 13px; font-weight: 600; line-height: 1; }
-.tsstat.ok .tsstat-val { color: var(--accent); }
-.tsstat.ng .tsstat-val { color: var(--red); }
-
-/* Main train area */
-.train-body {
-  flex: 1;
-  padding: 16px 14px 100px;
-  display: flex; flex-direction: column; gap: 12px;
-  max-width: 640px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* Question card */
-.q-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  animation: slideUp 0.2s ease;
-}
-
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.q-card-tag {
-  padding: 8px 14px;
-  display: flex; align-items: center; gap: 8px;
-  border-bottom: 1px solid var(--border);
-  font-family: var(--font-en);
-  font-size: 10px;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-
-.tag-anime { color: #ff9de2; }
-.tag-biz { color: var(--blue); }
-.tag-sub { margin-left: auto; color: var(--text-muted); font-size: 9px; font-weight: 400; }
-
-.q-card-body { padding: 22px 16px 18px; }
-
-.q-ja-main {
-  font-family: var(--font-jp);
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 1.75;
-  color: var(--text);
-  margin-bottom: 6px;
-  word-break: break-all;
-}
-
-.q-ja-speak-btn {
-  background: none; border: none; cursor: pointer;
-  color: var(--text-muted); font-size: 15px; padding: 2px 4px;
-  transition: color 0.15s; border-radius: 4px;
-  vertical-align: middle; margin-left: 4px;
-}
-.q-ja-speak-btn:hover { color: var(--accent); }
-
-/* Mic */
-.mic-area {
-  display: flex; flex-direction: column; align-items: center;
-  gap: 10px; padding: 18px 0 6px;
-}
-
-.mic-btn {
-  width: 68px; height: 68px; border-radius: 50%;
-  border: 2px solid var(--border);
-  background: var(--surface2);
-  color: var(--text-muted);
-  font-size: 26px;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.2s;
-}
-.mic-btn:hover { border-color: var(--accent); color: var(--accent); }
-.mic-btn.rec { border-color: var(--red); color: var(--red); animation: ripple 1s infinite; }
-
-@keyframes ripple {
-  0%,100% { box-shadow: 0 0 0 0 rgba(255,95,95,0.35); }
-  50% { box-shadow: 0 0 0 10px rgba(255,95,95,0); }
-}
-
-.mic-hint {
-  font-family: var(--font-en);
-  font-size: 10px; color: var(--text-muted); letter-spacing: 1.5px;
-}
-
-.transcript {
-  width: 100%;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 10px 12px;
-  font-family: var(--font-en);
-  font-size: 14px; line-height: 1.6;
-  color: var(--text);
-  display: none;
-  min-height: 42px;
-}
-.transcript.show { display: block; }
-
-/* Reveal btn */
-.reveal-btn {
-  width: 100%;
-  padding: 13px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border2);
-  background: var(--surface2);
-  color: var(--text-dim);
-  font-family: var(--font-jp);
-  font-size: 13px;
-  cursor: pointer;
-  transition: all 0.15s;
-  letter-spacing: 0.5px;
-}
-.reveal-btn:hover { border-color: var(--accent); color: var(--accent); }
-
-/* Answer card */
-.answer-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  display: none;
-  animation: slideUp 0.2s ease;
-}
-.answer-card.show { display: block; }
-
-.answer-top {
-  padding: 9px 14px;
-  border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; gap: 8px;
-  background: rgba(168,255,87,0.04);
-}
-.answer-top-label {
-  font-family: var(--font-en);
-  font-size: 10px; letter-spacing: 1.5px; font-weight: 600;
-  color: var(--accent);
-}
-.en-speak-btn {
-  margin-left: auto;
-  background: none; border: none; cursor: pointer;
-  color: var(--text-muted); font-size: 16px;
-  padding: 3px 6px; border-radius: 6px;
-  transition: color 0.15s;
-}
-.en-speak-btn:hover { color: var(--accent); }
-
-.answer-body { padding: 18px 16px; }
-
-.en-text {
-  font-family: var(--font-en);
-  font-size: 17px; font-weight: 400;
-  line-height: 1.8;
-  color: var(--text);
-  margin-bottom: 18px;
-}
-
-/* Score buttons */
-.score-row { display: flex; gap: 8px; }
-
-.score-btn {
-  flex: 1; padding: 13px 6px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-  background: transparent;
-  cursor: pointer;
-  display: flex; flex-direction: column; align-items: center; gap: 4px;
-  font-family: var(--font-jp);
-  font-size: 11px;
-  transition: all 0.15s;
-}
-.score-btn .score-icon { font-size: 22px; }
-.score-btn.ok-btn { color: var(--accent); border-color: var(--accent); }
-.score-btn.ok-btn:hover, .score-btn.ok-btn.picked { background: var(--accent-dim); }
-.score-btn.cl-btn { color: var(--yellow); border-color: var(--yellow); }
-.score-btn.cl-btn:hover, .score-btn.cl-btn.picked { background: var(--yellow-dim); }
-.score-btn.ng-btn { color: var(--red); border-color: var(--red); }
-.score-btn.ng-btn:hover, .score-btn.ng-btn.picked { background: var(--red-dim); }
+.score-row { display:flex; gap:8px; }
+.score-btn { flex:1; padding:13px 6px; border-radius:var(--radius-sm); border:1px solid var(--border); background:transparent; cursor:pointer; display:flex; flex-direction:column; align-items:center; gap:4px; font-family:var(--font-jp); font-size:11px; transition:all .15s; }
+.score-btn .score-icon { font-size:22px; }
+.score-btn.ok-btn { color:var(--accent); border-color:var(--accent); }
+.score-btn.ok-btn:hover,.score-btn.ok-btn.picked { background:var(--accent-dim); }
+.score-btn.cl-btn { color:var(--yellow); border-color:var(--yellow); }
+.score-btn.cl-btn:hover,.score-btn.cl-btn.picked { background:var(--yellow-dim); }
+.score-btn.ng-btn { color:var(--red); border-color:var(--red); }
+.score-btn.ng-btn:hover,.score-btn.ng-btn.picked { background:var(--red-dim); }
 
 /* Session end */
-.session-end {
-  display: none; flex-direction: column; align-items: center;
-  justify-content: center; gap: 20px;
-  padding: 40px 20px; text-align: center;
-}
-.session-end.show { display: flex; }
+.session-end { display:none; flex-direction:column; align-items:center; justify-content:center; gap:20px; padding:40px 20px; text-align:center; }
+.session-end.show { display:flex; }
+.se-icon { font-size:52px; }
+.se-title { font-family:var(--font-jp); font-size:24px; font-weight:700; color:var(--accent); }
+.se-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; width:100%; max-width:340px; }
+.se-stat { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px 8px; display:flex; flex-direction:column; align-items:center; gap:3px; }
+.se-stat-val { font-family:var(--font-en); font-size:28px; font-weight:700; }
+.se-stat-label { font-size:10px; color:var(--text-muted); font-family:var(--font-en); letter-spacing:1px; }
+.se-msg { font-size:13px; color:var(--text-dim); font-family:var(--font-jp); line-height:1.6; }
+.se-btns { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+.se-home-btn { padding:13px 28px; border-radius:var(--radius); border:1px solid var(--border2); background:var(--surface2); color:var(--text); font-family:var(--font-jp); font-size:13px; cursor:pointer; transition:all .15s; }
+.se-home-btn:hover { background:var(--surface3); }
+.se-restart-btn { padding:13px 28px; border-radius:var(--radius); border:none; background:var(--accent); color:#0d0f0a; font-family:var(--font-jp); font-size:13px; font-weight:700; cursor:pointer; transition:all .15s; }
+.se-restart-btn:hover { filter:brightness(1.08); }
 
-.se-icon { font-size: 52px; }
-.se-title {
-  font-family: var(--font-jp);
-  font-size: 24px; font-weight: 700; color: var(--accent);
-}
-.se-stats {
-  display: grid; grid-template-columns: repeat(3,1fr);
-  gap: 10px; width: 100%; max-width: 340px;
-}
-.se-stat {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 8px;
-  display: flex; flex-direction: column; align-items: center; gap: 3px;
-}
-.se-stat-val {
-  font-family: var(--font-en);
-  font-size: 28px; font-weight: 700;
-}
-.se-stat-label { font-size: 10px; color: var(--text-muted); font-family: var(--font-en); letter-spacing: 1px; }
-.se-msg { font-size: 13px; color: var(--text-dim); font-family: var(--font-jp); line-height: 1.6; }
-.se-btns { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
-.se-home-btn {
-  padding: 13px 28px; border-radius: var(--radius);
-  border: 1px solid var(--border2);
-  background: var(--surface2); color: var(--text);
-  font-family: var(--font-jp); font-size: 13px;
-  cursor: pointer; transition: all 0.15s;
-}
-.se-home-btn:hover { border-color: var(--border2); color: var(--text); background: var(--surface3); }
-.se-restart-btn {
-  padding: 13px 28px; border-radius: var(--radius);
-  border: none;
-  background: var(--accent); color: #0d0f0a;
-  font-family: var(--font-jp); font-size: 13px; font-weight: 700;
-  cursor: pointer; transition: all 0.15s;
-}
-.se-restart-btn:hover { filter: brightness(1.08); }
+/* TOAST */
+.toast { position:fixed; bottom:20px; left:50%; transform:translateX(-50%) translateY(60px); background:var(--surface3); border:1px solid var(--border2); border-radius:10px; padding:9px 18px; font-family:var(--font-jp); font-size:12px; color:var(--text); transition:transform .2s ease; z-index:999; white-space:nowrap; pointer-events:none; }
+.toast.show { transform:translateX(-50%) translateY(0); }
 
-/* ══════════════════════════════
-   TOAST
-══════════════════════════════ */
-.toast {
-  position: fixed; bottom: 20px; left: 50%;
-  transform: translateX(-50%) translateY(60px);
-  background: var(--surface3);
-  border: 1px solid var(--border2);
-  border-radius: 10px;
-  padding: 9px 18px;
-  font-family: var(--font-jp);
-  font-size: 12px; color: var(--text);
-  transition: transform 0.2s ease;
-  z-index: 999; white-space: nowrap;
-  pointer-events: none;
-}
-.toast.show { transform: translateX(-50%) translateY(0); }
-
-/* ══════════════════════════════
-   RESPONSIVE
-══════════════════════════════ */
-@media (max-width: 400px) {
-  .q-ja-main { font-size: 18px; }
-  .en-text { font-size: 15px; }
-  .ss-grid { grid-template-columns: repeat(3,1fr); }
+@media(max-width:400px) {
+  .q-ja-main { font-size:18px; }
+  .en-text { font-size:15px; }
+  .start-btns { grid-template-columns:1fr 1fr 1fr; }
 }
 </style>
 </head>
 <body>
 
-<!-- ══════════════════════════════
-     HOME VIEW
-══════════════════════════════ -->
+<!-- HOME VIEW -->
 <div id="homeView" class="view active">
-
   <div class="app-header">
     <div class="header-logo">EN·TRAINER</div>
     <div class="header-stats">
-      <div class="hstat ok">
-        <div class="hstat-val" id="h-ok">0</div>
-        <div class="hstat-label">OK</div>
-      </div>
-      <div class="hstat ng">
-        <div class="hstat-val" id="h-ng">0</div>
-        <div class="hstat-label">NG</div>
-      </div>
-      <div class="hstat streak">
-        <div class="hstat-val" id="h-streak">0</div>
-        <div class="hstat-label">🔥</div>
-      </div>
+      <div class="hstat ok"><div class="hstat-val" id="h-ok">0</div><div class="hstat-label">OK</div></div>
+      <div class="hstat ng"><div class="hstat-val" id="h-ng">0</div><div class="hstat-label">NG</div></div>
+      <div class="hstat streak"><div class="hstat-val" id="h-streak">0</div><div class="hstat-label">🔥</div></div>
     </div>
   </div>
 
   <div class="home-top">
-    <!-- Overall progress -->
+    <!-- Progress -->
     <div class="overall-progress">
       <div class="op-top">
         <div class="op-title">OVERALL PROGRESS</div>
-        <div class="op-count" id="op-count">0 / 300</div>
+        <div class="op-count" id="op-count">0 / 0</div>
       </div>
-      <div class="op-bar-bg">
-        <div class="op-bar-fill" id="op-fill" style="width:0%"></div>
-      </div>
+      <div class="op-bar-bg"><div class="op-bar-fill" id="op-fill" style="width:0%"></div></div>
       <div class="op-legend">
         <div class="legend-item"><div class="legend-dot ok"></div>OK</div>
         <div class="legend-item"><div class="legend-dot close"></div>惜しい</div>
@@ -656,25 +309,34 @@ body {
       </div>
     </div>
 
-    <!-- Filter & Review -->
-    <div class="home-controls">
-      <button class="filter-chip on-all" data-f="all" onclick="setFilter('all')">ALL</button>
-      <button class="filter-chip" data-f="anime" onclick="setFilter('anime')">🎌 ANIME</button>
-      <button class="filter-chip" data-f="entertainment_business" onclick="setFilter('biz')">💼 BUSINESS</button>
-      <button class="review-chip disabled" id="reviewChip" onclick="startReview()">🔁 復習 <span id="reviewCount">0</span></button>
+    <!-- Calendar -->
+    <div class="calendar-wrap">
+      <div class="cal-header">
+        <div class="cal-title" id="calTitle">THIS WEEK</div>
+        <button class="cal-mode-btn" id="calModeBtn" onclick="toggleCalMode()">月表示</button>
+      </div>
+      <div id="calBody"></div>
+    </div>
+
+    <!-- Sound toggle -->
+    <div class="sound-row">
+      <div class="sound-label"><span class="sound-icon">🔊</span>音声読み上げ</div>
+      <label class="toggle-wrap">
+        <input type="checkbox" id="soundToggle" checked onchange="saveSoundPref()">
+        <span class="toggle-slider"></span>
+      </label>
     </div>
 
     <!-- Start buttons -->
     <div class="start-btns">
-      <button class="start-btn primary" onclick="startSession(9999)">
-        <span class="start-icon">▶</span>
-        最初から
-        <span class="start-sub">START ALL</span>
+      <button class="start-btn s-primary" onclick="startSession()">
+        <span class="s-icon">▶</span>最初から<span class="s-sub">START</span>
       </button>
-      <button class="start-btn resume-btn-home" id="resumeBtn" onclick="resumeSession()" style="display:none;">
-        <span class="start-icon">↩</span>
-        続きから
-        <span class="start-sub">RESUME</span>
+      <button class="start-btn s-resume" id="resumeBtn" onclick="resumeSession()" style="display:none;">
+        <span class="s-icon">↩</span>続きから<span class="s-sub">RESUME</span>
+      </button>
+      <button class="start-btn s-review disabled" id="reviewBtn" onclick="startReview()">
+        <span class="s-icon">🔁</span>復習 <span id="reviewCount" style="font-size:11px;"></span><span class="s-sub">REVIEW</span>
       </button>
     </div>
   </div>
@@ -682,22 +344,20 @@ body {
   <!-- Question list -->
   <div class="section-header">
     ALL QUESTIONS <span class="section-count" id="listCount">0</span>
+    <div class="sort-chips">
+      <button class="sort-chip active" data-sort="default" onclick="setSort('default')">番号順</button>
+      <button class="sort-chip" data-sort="status" onclick="setSort('status')">採点順</button>
+    </div>
   </div>
   <div class="q-list" id="qList"></div>
-
 </div>
 
-<!-- ══════════════════════════════
-     TRAIN VIEW
-══════════════════════════════ -->
+<!-- TRAIN VIEW -->
 <div id="trainView" class="view">
-
   <div class="train-header">
-    <button class="home-back-btn" onclick="pauseAndGoHome()" title="ホームへ">←</button>
+    <button class="home-back-btn" onclick="pauseAndGoHome()">←</button>
     <div class="train-progress-wrap">
-      <div class="train-progress-bar-bg">
-        <div class="train-progress-bar-fill" id="t-prog-fill" style="width:0%"></div>
-      </div>
+      <div class="train-progress-bar-bg"><div class="train-progress-bar-fill" id="t-prog-fill" style="width:0%"></div></div>
       <div class="train-progress-text" id="t-prog-text">0 / 0</div>
     </div>
     <div class="train-session-stats">
@@ -707,18 +367,13 @@ body {
   </div>
 
   <div class="train-body">
-
-    <!-- Question card -->
     <div class="q-card" id="qCard">
       <div class="q-card-tag" id="qCardTag">
         <span id="qTagLabel">—</span>
         <span class="tag-sub" id="qSubLabel"></span>
       </div>
       <div class="q-card-body">
-        <div class="q-ja-main" id="qJa">
-          読み込み中…
-          <button class="q-ja-speak-btn" onclick="speakJa()" title="日本語を読み上げ">🔊</button>
-        </div>
+        <div class="q-ja-main" id="qJa">読み込み中…</div>
         <div class="mic-area">
           <button class="mic-btn" id="micBtn" onclick="toggleMic()">🎤</button>
           <div class="mic-hint" id="micHint">TAP TO SPEAK</div>
@@ -727,48 +382,30 @@ body {
       </div>
     </div>
 
-    <!-- Reveal -->
     <button class="reveal-btn" id="revealBtn" onclick="revealAnswer()">▼ 模範解答を見る</button>
 
-    <!-- Answer card -->
     <div class="answer-card" id="answerCard">
       <div class="answer-top">
         <div class="answer-top-label">✓ MODEL ANSWER</div>
-        <button class="en-speak-btn" onclick="speakEn()" title="英語を読み上げ">🔊</button>
+        <button class="en-speak-btn" onclick="speakEn()">🔊</button>
       </div>
       <div class="answer-body">
         <div class="en-text" id="enText"></div>
         <div class="score-row">
-          <button class="score-btn ok-btn" onclick="scoreQ('ok', this)">
-            <span class="score-icon">✅</span><span>OK</span>
-          </button>
-          <button class="score-btn cl-btn" onclick="scoreQ('close', this)">
-            <span class="score-icon">🔶</span><span>惜しい</span>
-          </button>
-          <button class="score-btn ng-btn" onclick="scoreQ('ng', this)">
-            <span class="score-icon">❌</span><span>NG</span>
-          </button>
+          <button class="score-btn ok-btn" onclick="scoreQ('ok',this)"><span class="score-icon">✅</span><span>OK</span></button>
+          <button class="score-btn cl-btn" onclick="scoreQ('close',this)"><span class="score-icon">🔶</span><span>惜しい</span></button>
+          <button class="score-btn ng-btn" onclick="scoreQ('ng',this)"><span class="score-icon">❌</span><span>NG</span></button>
         </div>
       </div>
     </div>
 
-    <!-- Session end -->
     <div class="session-end" id="sessionEnd">
       <div class="se-icon">🎉</div>
       <div class="se-title">セッション完了！</div>
       <div class="se-stats">
-        <div class="se-stat">
-          <div class="se-stat-val" id="se-total" style="color:var(--text)">0</div>
-          <div class="se-stat-label">TOTAL</div>
-        </div>
-        <div class="se-stat">
-          <div class="se-stat-val" id="se-ok" style="color:var(--accent)">0</div>
-          <div class="se-stat-label">OK</div>
-        </div>
-        <div class="se-stat">
-          <div class="se-stat-val" id="se-ng" style="color:var(--red)">0</div>
-          <div class="se-stat-label">NG</div>
-        </div>
+        <div class="se-stat"><div class="se-stat-val" id="se-total" style="color:var(--text)">0</div><div class="se-stat-label">TOTAL</div></div>
+        <div class="se-stat"><div class="se-stat-val" id="se-ok" style="color:var(--accent)">0</div><div class="se-stat-label">OK</div></div>
+        <div class="se-stat"><div class="se-stat-val" id="se-ng" style="color:var(--red)">0</div><div class="se-stat-label">NG</div></div>
       </div>
       <div class="se-msg" id="se-msg"></div>
       <div class="se-btns">
@@ -776,61 +413,50 @@ body {
         <button class="se-restart-btn" onclick="restartSameSession()">🔁 同じセッション</button>
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- Toast -->
 <div class="toast" id="toast"></div>
 
 <script>
-// ══════════════════════════════
+// ══════════════════════════
 //  STATE
-// ══════════════════════════════
+// ══════════════════════════
 let QUESTIONS = [];
 let results   = {};   // { id: 'ok'|'close'|'ng' }
+let dailyLog  = {};   // { 'YYYY-MM-DD': count }
 let streak    = 0;
-let currentFilter = 'all';
+let soundOn   = true;
+let currentSort = 'default'; // 'default' | 'status'
+let calMode   = 'week';      // 'week' | 'month'
+let calMonthOffset = 0;      // for month view navigation
 
-// Session state
-let session = {
-  queue: [],       // array of question ids
-  idx: 0,
-  ok: 0, close: 0, ng: 0,
-  isReview: false,
-  savedQueue: null,
-  savedIdx: 0,
-};
-
+let session = { queue:[], idx:0, ok:0, close:0, ng:0, isReview:false, savedQueue:null, savedIdx:0 };
 let recognition = null;
 let isRecording = false;
 let answered    = false;
 
-const STORAGE_KEY = 'en_trainer_v2';
+const STORAGE_KEY = 'en_trainer_v3';
 
-// ══════════════════════════════
+// ══════════════════════════
 //  PERSIST
-// ══════════════════════════════
+// ══════════════════════════
 function save() {
-  const data = {
-    results,
-    streak,
-    savedSession: session.savedQueue ? {
-      queue: session.savedQueue,
-      idx: session.savedIdx,
-      isReview: session.isReview,
-    } : null,
-  };
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch(e) {}
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      results, dailyLog, streak, soundOn,
+      savedSession: session.savedQueue ? { queue:session.savedQueue, idx:session.savedIdx, isReview:session.isReview } : null
+    }));
+  } catch(e) {}
 }
 
 function load() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return;
-    const d = JSON.parse(raw);
-    if (d.results) results = d.results;
-    if (d.streak)  streak  = d.streak;
+    const d = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    if (d.results)   results   = d.results;
+    if (d.dailyLog)  dailyLog  = d.dailyLog;
+    if (d.streak)    streak    = d.streak;
+    if (d.soundOn !== undefined) soundOn = d.soundOn;
     if (d.savedSession) {
       session.savedQueue = d.savedSession.queue;
       session.savedIdx   = d.savedSession.idx;
@@ -839,45 +465,53 @@ function load() {
   } catch(e) {}
 }
 
-// ══════════════════════════════
-//  LOAD QUESTIONS
-// ══════════════════════════════
+function todayKey() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function logAnswer() {
+  const k = todayKey();
+  dailyLog[k] = (dailyLog[k] || 0) + 1;
+}
+
+// ══════════════════════════
+//  INIT
+// ══════════════════════════
 async function init() {
   load();
+  document.getElementById('soundToggle').checked = soundOn;
   try {
     const res  = await fetch('question_bank.json');
     const data = await res.json();
     QUESTIONS  = data.questions;
   } catch(e) {
-    // Fallback minimal set
     QUESTIONS = [
-      {id:1,theme:"anime",sub_theme:"進撃の巨人",ja:"最終回は衝撃的すぎて言葉が出ませんでした。",en:"The final episode was so shocking that I was left speechless."},
-      {id:2,theme:"anime",sub_theme:"呪術廻戦",ja:"五条悟の強さは圧倒的で、登場するだけで画面が締まります。",en:"Gojo Satoru's strength is overwhelming, and his mere presence tightens up every scene."},
-      {id:3,theme:"entertainment_business",sub_theme:"配信",ja:"ストリーミングサービスの契約者数が急増しています。",en:"The number of streaming service subscribers is growing rapidly."},
+      {id:1,theme:'anime',sub_theme:'進撃の巨人',ja:'最終回は衝撃的すぎて言葉が出ませんでした。',en:'The final episode was so shocking that I was left speechless.'},
+      {id:2,theme:'entertainment_business',sub_theme:'配信',ja:'ストリーミングサービスの契約者数が急増しています。',en:'The number of streaming service subscribers is growing rapidly.'},
     ];
   }
   renderHome();
-  if (session.savedQueue) {
-    document.getElementById('resumeBtn').style.display = '';
-  }
+  if (session.savedQueue) document.getElementById('resumeBtn').style.display = '';
 }
 
-// ══════════════════════════════
+function saveSoundPref() {
+  soundOn = document.getElementById('soundToggle').checked;
+  save();
+}
+
+// ══════════════════════════
 //  VIEWS
-// ══════════════════════════════
+// ══════════════════════════
 function showView(id) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
   document.getElementById(id).classList.add('active');
-  window.scrollTo(0, 0);
+  window.scrollTo(0,0);
 }
 
-function goHome() {
-  showView('homeView');
-  renderHome();
-}
+function goHome() { showView('homeView'); renderHome(); }
 
 function pauseAndGoHome() {
-  // Save current position
   if (session.queue.length > 0 && session.idx < session.queue.length) {
     session.savedQueue = [...session.queue];
     session.savedIdx   = session.idx;
@@ -889,101 +523,201 @@ function pauseAndGoHome() {
   goHome();
 }
 
-// ══════════════════════════════
+// ══════════════════════════
 //  HOME RENDER
-// ══════════════════════════════
-function setFilter(f) {
-  currentFilter = f;
-  document.querySelectorAll('.filter-chip').forEach(b => {
-    b.className = 'filter-chip';
-    if (b.dataset.f === f) {
-      if (f === 'all')   b.classList.add('on-all');
-      if (f === 'anime') b.classList.add('on-anime');
-      if (f === 'biz')   b.classList.add('on-biz');
-    }
-  });
-  renderHome();
-}
-
+// ══════════════════════════
 function renderHome() {
-  const filtered = currentFilter === 'all' ? QUESTIONS
-    : QUESTIONS.filter(q => currentFilter === 'anime'
-        ? q.theme === 'anime'
-        : q.theme === 'entertainment_business');
-
-  // Overall progress
-  const answered = Object.keys(results).length;
-  const pct = QUESTIONS.length ? (answered / QUESTIONS.length * 100) : 0;
-  document.getElementById('op-fill').style.width  = pct + '%';
-  document.getElementById('op-count').textContent = answered + ' / ' + QUESTIONS.length;
-
-  // Header stats
-  const okCount  = Object.values(results).filter(v => v === 'ok').length;
-  const ngCount  = Object.values(results).filter(v => v === 'ng').length;
+  // Stats
+  const okCount  = Object.values(results).filter(v=>v==='ok').length;
+  const ngCount  = Object.values(results).filter(v=>v==='ng').length;
   document.getElementById('h-ok').textContent     = okCount;
   document.getElementById('h-ng').textContent     = ngCount;
   document.getElementById('h-streak').textContent = streak;
 
-  // Review chip
-  const ngIds = QUESTIONS.filter(q => results[q.id] === 'ng' || results[q.id] === 'close');
-  const reviewCount = ngIds.length;
-  document.getElementById('reviewCount').textContent = reviewCount;
-  const rc = document.getElementById('reviewChip');
-  rc.classList.toggle('disabled', reviewCount === 0);
+  // Progress
+  const answered = Object.keys(results).length;
+  const total    = QUESTIONS.length;
+  const pct      = total ? (answered/total*100) : 0;
+  document.getElementById('op-fill').style.width  = pct + '%';
+  document.getElementById('op-count').textContent = answered + ' / ' + total;
+
+  // Review button
+  const reviewIds = QUESTIONS.filter(q => results[q.id]==='ng' || results[q.id]==='close');
+  document.getElementById('reviewCount').textContent = reviewIds.length || '';
+  const rb = document.getElementById('reviewBtn');
+  rb.classList.toggle('disabled', reviewIds.length === 0);
+
+  // Calendar
+  renderCalendar();
 
   // List
-  document.getElementById('listCount').textContent = filtered.length;
-  const list = document.getElementById('qList');
-  list.innerHTML = '';
+  renderList();
+}
 
-  filtered.forEach((q, i) => {
-    const st = results[q.id] || 'todo';
+// ══════════════════════════
+//  SORT
+// ══════════════════════════
+function setSort(s) {
+  currentSort = s;
+  document.querySelectorAll('.sort-chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.sort === s);
+  });
+  renderList();
+}
+
+const STATUS_ORDER = { ng:0, close:1, ok:2, todo:3 };
+
+function renderList() {
+  let list = [...QUESTIONS];
+
+  if (currentSort === 'status') {
+    list.sort((a,b) => {
+      const sa = results[a.id] || 'todo';
+      const sb = results[b.id] || 'todo';
+      return (STATUS_ORDER[sa]??3) - (STATUS_ORDER[sb]??3);
+    });
+  }
+
+  document.getElementById('listCount').textContent = list.length;
+  const el = document.getElementById('qList');
+  el.innerHTML = '';
+
+  list.forEach((q, i) => {
+    const st  = results[q.id] || 'todo';
+    const dot = q.theme === 'anime' ? 'dot-anime' : 'dot-biz';
+    const badge =
+      st==='ok'    ? '<span class="q-badge badge-ok">OK</span>' :
+      st==='close' ? '<span class="q-badge badge-close">惜しい</span>' :
+      st==='ng'    ? '<span class="q-badge badge-ng">NG</span>' :
+                     '<span class="q-badge badge-todo">—</span>';
+
     const row = document.createElement('div');
     row.className = 'q-row status-' + st;
-    row.onclick = () => startFromQuestion(q.id);
-
-    const dot = q.theme === 'anime' ? 'dot-anime' : 'dot-biz';
-    let badge = '';
-    if (st === 'ok')    badge = '<span class="q-badge badge-ok">OK</span>';
-    if (st === 'close') badge = '<span class="q-badge badge-close">惜しい</span>';
-    if (st === 'ng')    badge = '<span class="q-badge badge-ng">NG</span>';
-    if (st === 'todo')  badge = '<span class="q-badge badge-todo">—</span>';
-
+    row.onclick   = () => startFromQuestion(q.id);
     row.innerHTML = `
       <span class="q-num">${i+1}</span>
       <span class="q-theme-dot ${dot}"></span>
       <span class="q-ja">${q.ja}</span>
-      ${badge}
-    `;
-    list.appendChild(row);
+      ${badge}`;
+    el.appendChild(row);
   });
 }
 
-// ══════════════════════════════
-//  SESSION START
-// ══════════════════════════════
-function getPool() {
-  if (currentFilter === 'all') return [...QUESTIONS];
-  return QUESTIONS.filter(q =>
-    currentFilter === 'anime'
-      ? q.theme === 'anime'
-      : q.theme === 'entertainment_business'
-  );
+// ══════════════════════════
+//  CALENDAR
+// ══════════════════════════
+function toggleCalMode() {
+  calMode = calMode === 'week' ? 'month' : 'week';
+  calMonthOffset = 0;
+  document.getElementById('calModeBtn').textContent = calMode === 'week' ? '月表示' : '週表示';
+  document.getElementById('calTitle').textContent   = calMode === 'week' ? 'THIS WEEK' : 'MONTHLY';
+  renderCalendar();
 }
 
-function startSession(size) {
-  const pool = getPool().sort(() => Math.random() - 0.5);
-  const queue = pool.slice(0, Math.min(size, pool.length)).map(q => q.id);
+function heatColor(count) {
+  if (!count) return '';
+  const max = 100;
+  const t   = Math.min(count / max, 1);
+  // green gradient: dark → bright accent
+  const r = Math.round(20  + t * (168-20));
+  const g = Math.round(80  + t * (255-80));
+  const b = Math.round(20  + t * (87-20));
+  return `rgb(${r},${g},${b})`;
+}
+
+function renderCalendar() {
+  if (calMode === 'week') renderWeekCal();
+  else                    renderMonthCal();
+}
+
+function renderWeekCal() {
+  const today   = new Date();
+  const dow     = today.getDay(); // 0=Sun
+  const days    = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+  let html      = '<div class="cal-week">';
+
+  for (let i = 0; i < 7; i++) {
+    const d   = new Date(today);
+    d.setDate(today.getDate() - dow + i);
+    const key = d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+    const cnt = dailyLog[key] || 0;
+    const isToday = (i === dow);
+    const bg  = heatColor(cnt);
+    const style = bg ? `style="background:${bg}"` : '';
+    const todayCls = isToday ? ' today' : '';
+    const hasCls   = cnt > 0 ? ' has-data' : '';
+
+    html += `<div class="cal-day">
+      <div class="cal-day-label">${days[i]}</div>
+      <div class="cal-cell${todayCls}${hasCls}" data-count="${cnt}" ${style} title="${key}: ${cnt}問">
+        ${cnt > 0 ? cnt : ''}
+        ${cnt > 0 ? `<div class="cal-tooltip">${cnt}問</div>` : ''}
+      </div>
+    </div>`;
+  }
+  html += '</div>';
+  document.getElementById('calBody').innerHTML = html;
+}
+
+function renderMonthCal() {
+  const now    = new Date();
+  const target = new Date(now.getFullYear(), now.getMonth() + calMonthOffset, 1);
+  const year   = target.getFullYear();
+  const month  = target.getMonth();
+  const days   = ['S','M','T','W','T','F','S'];
+
+  const firstDay = new Date(year, month, 1).getDay();
+  const lastDate = new Date(year, month+1, 0).getDate();
+  const todayStr = todayKey();
+
+  let html = `
+    <div class="cal-month-label">
+      <button class="cal-nav-btn" onclick="changeMonth(-1)">‹</button>
+      <div class="cal-month-name">${year} / ${String(month+1).padStart(2,'0')}</div>
+      <button class="cal-nav-btn" onclick="changeMonth(1)">›</button>
+    </div>
+    <div class="cal-month">`;
+
+  days.forEach(d => { html += `<div class="cal-dow">${d}</div>`; });
+
+  // leading blanks
+  for (let i = 0; i < firstDay; i++) html += '<div class="cal-mcell other-month"></div>';
+
+  for (let d = 1; d <= lastDate; d++) {
+    const key   = year+'-'+String(month+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');
+    const cnt   = dailyLog[key] || 0;
+    const bg    = heatColor(cnt);
+    const style = bg ? `style="background:${bg}"` : '';
+    const isTod = key === todayStr ? ' today-m' : '';
+    const hasCls= cnt > 0 ? ' has-data' : '';
+    html += `<div class="cal-mcell${isTod}${hasCls}" ${style}>
+      ${d}
+      ${cnt > 0 ? `<div class="cal-tooltip">${cnt}問</div>` : ''}
+    </div>`;
+  }
+
+  html += '</div>';
+  document.getElementById('calBody').innerHTML = html;
+}
+
+function changeMonth(dir) {
+  calMonthOffset += dir;
+  renderMonthCal();
+}
+
+// ══════════════════════════
+//  SESSION
+// ══════════════════════════
+function startSession() {
+  const queue = [...QUESTIONS].sort(()=>Math.random()-0.5).map(q=>q.id);
   launchSession(queue, 0, false);
 }
 
 function startReview() {
-  const ngIds = QUESTIONS
-    .filter(q => results[q.id] === 'ng' || results[q.id] === 'close')
-    .sort(() => Math.random() - 0.5)
-    .map(q => q.id);
-  if (!ngIds.length) return;
-  launchSession(ngIds, 0, true);
+  const ids = QUESTIONS.filter(q=>results[q.id]==='ng'||results[q.id]==='close')
+    .sort(()=>Math.random()-0.5).map(q=>q.id);
+  if (!ids.length) return;
+  launchSession(ids, 0, true);
 }
 
 function resumeSession() {
@@ -995,11 +729,9 @@ function resumeSession() {
 }
 
 function startFromQuestion(qid) {
-  // Start a session from this specific question, put it first
-  const pool = getPool();
-  const idx  = pool.findIndex(q => q.id === qid);
+  const idx = QUESTIONS.findIndex(q=>q.id===qid);
   if (idx < 0) return;
-  const queue = [pool[idx], ...pool.filter((_,i) => i !== idx)].map(q => q.id);
+  const queue = [QUESTIONS[idx], ...QUESTIONS.filter((_,i)=>i!==idx)].map(q=>q.id);
   launchSession(queue, 0, false);
 }
 
@@ -1012,84 +744,69 @@ function launchSession(queue, startIdx, isReview) {
   session.isReview = isReview;
   session.savedQueue = null;
 
-  // Hide session end, show cards
   document.getElementById('sessionEnd').classList.remove('show');
-  document.getElementById('qCard').style.display = '';
+  document.getElementById('qCard').style.display    = '';
   document.getElementById('revealBtn').style.display = '';
   showView('trainView');
   loadQ();
 }
 
 function restartSameSession() {
-  const queue = [...session.queue].sort(() => Math.random() - 0.5);
-  launchSession(queue, 0, session.isReview);
+  launchSession([...session.queue].sort(()=>Math.random()-0.5), 0, session.isReview);
 }
 
-// ══════════════════════════════
+// ══════════════════════════
 //  LOAD QUESTION
-// ══════════════════════════════
+// ══════════════════════════
 function getQ() {
-  const id = session.queue[session.idx];
-  return QUESTIONS.find(q => q.id === id);
+  return QUESTIONS.find(q=>q.id===session.queue[session.idx]);
 }
 
 function loadQ() {
   answered = false;
   stopRecording();
 
-  // Reset UI
   document.getElementById('answerCard').classList.remove('show');
   document.getElementById('revealBtn').style.display = '';
   document.getElementById('transcript').classList.remove('show');
-  document.getElementById('transcript').textContent = '';
-  document.getElementById('micHint').textContent = 'TAP TO SPEAK';
+  document.getElementById('transcript').textContent  = '';
+  document.getElementById('micHint').textContent     = 'TAP TO SPEAK';
   document.getElementById('micBtn').classList.remove('rec');
-  document.querySelectorAll('.score-btn').forEach(b => b.classList.remove('picked'));
+  document.querySelectorAll('.score-btn').forEach(b=>b.classList.remove('picked'));
 
   const q = getQ();
   if (!q) { showSessionEnd(); return; }
 
-  // Progress
   const pct = session.idx / session.queue.length * 100;
-  document.getElementById('t-prog-fill').style.width = pct + '%';
-  document.getElementById('t-prog-text').textContent = (session.idx + 1) + ' / ' + session.queue.length;
+  document.getElementById('t-prog-fill').style.width  = pct + '%';
+  document.getElementById('t-prog-text').textContent  = (session.idx+1) + ' / ' + session.queue.length;
   document.getElementById('t-ok').textContent = session.ok;
   document.getElementById('t-ng').textContent = session.ng;
 
-  // Theme tag
-  const tagEl = document.getElementById('qCardTag');
+  const tagEl  = document.getElementById('qCardTag');
   const tagLbl = document.getElementById('qTagLabel');
-  if (q.theme === 'anime') {
-    tagEl.className = 'q-card-tag tag-anime';
-    tagLbl.textContent = '🎌 ANIME';
-  } else {
-    tagEl.className = 'q-card-tag tag-biz';
-    tagLbl.textContent = '💼 BUSINESS';
-  }
+  if (q.theme === 'anime') { tagEl.className='q-card-tag tag-anime'; tagLbl.textContent='🎌 ANIME'; }
+  else                     { tagEl.className='q-card-tag tag-biz';   tagLbl.textContent='💼 BUSINESS'; }
   document.getElementById('qSubLabel').textContent = q.sub_theme || '';
 
-  // Text
   document.getElementById('qJa').innerHTML =
-    q.ja + ' <button class="q-ja-speak-btn" onclick="speakJa()" title="日本語を読み上げ">🔊</button>';
+    q.ja + (soundOn ? ' <button class="q-ja-speak-btn" onclick="speakJa()">🔊</button>' : '');
   document.getElementById('enText').textContent = q.en;
 
-  // Auto-speak Japanese
-  speakJa();
+  if (soundOn) speakJa();
 }
 
-// ══════════════════════════════
+// ══════════════════════════
 //  TTS
-// ══════════════════════════════
+// ══════════════════════════
 function speakJa() {
-  const q = getQ(); if (!q) return;
+  const q = getQ(); if (!q || !soundOn) return;
   speak(q.ja, 'ja-JP', 0.9);
 }
-
 function speakEn() {
   const q = getQ(); if (!q) return;
   speak(q.en, 'en-US', 0.88);
 }
-
 function speak(text, lang, rate) {
   if (!window.speechSynthesis) return;
   speechSynthesis.cancel();
@@ -1098,18 +815,17 @@ function speak(text, lang, rate) {
   speechSynthesis.speak(u);
 }
 
-// ══════════════════════════════
-//  MIC / STT
-// ══════════════════════════════
+// ══════════════════════════
+//  MIC
+// ══════════════════════════
 function setupRecognition() {
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!SR) return null;
   const r = new SR();
-  r.lang = 'en-US'; r.continuous = false; r.interimResults = true;
-
+  r.lang='en-US'; r.continuous=false; r.interimResults=true;
   r.onresult = e => {
-    let fin = '', inter = '';
-    for (let i = e.resultIndex; i < e.results.length; i++) {
+    let fin='', inter='';
+    for (let i=e.resultIndex; i<e.results.length; i++) {
       if (e.results[i].isFinal) fin   += e.results[i][0].transcript;
       else                       inter += e.results[i][0].transcript;
     }
@@ -1117,81 +833,65 @@ function setupRecognition() {
     box.textContent = fin || inter;
     box.classList.add('show');
   };
-  r.onend = () => stopRecording();
-  r.onerror = () => { stopRecording(); showToast('マイクにアクセスできません'); };
+  r.onend  = () => stopRecording();
+  r.onerror= () => { stopRecording(); showToast('マイクにアクセスできません'); };
   return r;
 }
-
-function toggleMic() {
-  isRecording ? stopRecording() : startRecording();
-}
-
+function toggleMic() { isRecording ? stopRecording() : startRecording(); }
 function startRecording() {
   if (!recognition) recognition = setupRecognition();
   if (!recognition) { showToast('このブラウザは音声入力非対応です'); return; }
-  try {
-    recognition.start();
-    isRecording = true;
-    document.getElementById('micBtn').classList.add('rec');
-    document.getElementById('micHint').textContent = '● REC...';
-  } catch(e) {}
+  try { recognition.start(); isRecording=true; document.getElementById('micBtn').classList.add('rec'); document.getElementById('micHint').textContent='● REC...'; } catch(e) {}
 }
-
 function stopRecording() {
   if (recognition && isRecording) try { recognition.stop(); } catch(e) {}
-  isRecording = false;
+  isRecording=false;
   document.getElementById('micBtn').classList.remove('rec');
-  document.getElementById('micHint').textContent = 'TAP TO SPEAK';
+  document.getElementById('micHint').textContent='TAP TO SPEAK';
 }
 
-// ══════════════════════════════
+// ══════════════════════════
 //  REVEAL & SCORE
-// ══════════════════════════════
+// ══════════════════════════
 function revealAnswer() {
-  document.getElementById('revealBtn').style.display = 'none';
+  document.getElementById('revealBtn').style.display='none';
   document.getElementById('answerCard').classList.add('show');
   stopRecording();
+  if (soundOn) speakEn();
 }
 
 function scoreQ(result, btn) {
   if (answered) return;
   answered = true;
-
   const q = getQ(); if (!q) return;
 
   results[q.id] = result;
+  logAnswer();
 
-  if (result === 'ok')    { session.ok++;    streak++; showToast('✅ Nice!'); }
-  if (result === 'close') { session.close++; streak = 0; showToast('🔶 惜しい！'); }
-  if (result === 'ng')    { session.ng++;    streak = 0; showToast('❌ 次頑張ろう'); }
+  if (result==='ok')    { session.ok++;    streak++; showToast('✅ Nice!'); }
+  if (result==='close') { session.close++; streak=0; showToast('🔶 惜しい！'); }
+  if (result==='ng')    { session.ng++;    streak=0; showToast('❌ 次頑張ろう'); }
 
-  document.querySelectorAll('.score-btn').forEach(b => b.classList.remove('picked'));
+  document.querySelectorAll('.score-btn').forEach(b=>b.classList.remove('picked'));
   btn.classList.add('picked');
   document.getElementById('h-streak').textContent = streak;
   save();
 
-  // Auto-advance after short delay so user can see the flash
-  setTimeout(() => nextQ(), 600);
+  setTimeout(()=>nextQ(), 600);
 }
 
-// ══════════════════════════════
-//  NEXT
-// ══════════════════════════════
 function nextQ() {
   session.idx++;
-  if (session.idx >= session.queue.length) {
-    showSessionEnd();
-  } else {
-    loadQ();
-  }
+  if (session.idx >= session.queue.length) showSessionEnd();
+  else loadQ();
 }
 
-// ══════════════════════════════
+// ══════════════════════════
 //  SESSION END
-// ══════════════════════════════
+// ══════════════════════════
 function showSessionEnd() {
-  document.getElementById('qCard').style.display    = 'none';
-  document.getElementById('revealBtn').style.display = 'none';
+  document.getElementById('qCard').style.display    ='none';
+  document.getElementById('revealBtn').style.display='none';
   document.getElementById('answerCard').classList.remove('show');
 
   const total = session.ok + session.close + session.ng;
@@ -1199,31 +899,23 @@ function showSessionEnd() {
   document.getElementById('se-ok').textContent    = session.ok;
   document.getElementById('se-ng').textContent    = session.ng;
 
-  const pct = total ? Math.round(session.ok / total * 100) : 0;
-  const msg =
-    pct === 100 ? '🔥 パーフェクト！素晴らしい！' :
-    pct >= 80   ? '👏 とても良い成績です！' :
-    pct >= 60   ? '💪 もう少し！続けよう！' :
-                  '📚 復習モードで再チャレンジしよう！';
-  document.getElementById('se-msg').textContent = `正答率 ${pct}% — ${msg}`;
+  const pct = total ? Math.round(session.ok/total*100) : 0;
+  document.getElementById('se-msg').textContent = `正答率 ${pct}% — ` + (
+    pct===100 ? '🔥 パーフェクト！' : pct>=80 ? '👏 とても良い！' : pct>=60 ? '💪 もう少し！' : '📚 復習しよう！');
 
   document.getElementById('sessionEnd').classList.add('show');
   save();
 }
 
-// ══════════════════════════════
+// ══════════════════════════
 //  TOAST
-// ══════════════════════════════
+// ══════════════════════════
 function showToast(msg) {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 1500);
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 1500);
 }
 
-// ══════════════════════════════
-//  BOOT
-// ══════════════════════════════
 init();
 </script>
 </body>

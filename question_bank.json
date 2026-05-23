@@ -1,0 +1,2115 @@
+{
+  "metadata": {
+    "gse_level": 53,
+    "themes": [
+      "anime",
+      "entertainment_business"
+    ],
+    "ratio": "50:50",
+    "format": "ja_to_en",
+    "total": 300,
+    "version": 1
+  },
+  "questions": [
+    {
+      "id": 1,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "最終回は衝撃的すぎて言葉が出ませんでした。",
+      "en": "The final episode was so shocking that I was left speechless."
+    },
+    {
+      "id": 2,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "エレンの選択には賛否両論ありますが、私は理解できると思いました。",
+      "en": "Eren's choice is controversial, but I think I can understand where he was coming from."
+    },
+    {
+      "id": 3,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "この作品は自由とは何かを深く考えさせてくれます。",
+      "en": "This series makes you think deeply about what freedom truly means."
+    },
+    {
+      "id": 4,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "リヴァイ兵長はどのシーンでもかっこよすぎます。",
+      "en": "Captain Levi is incredibly cool in every single scene."
+    },
+    {
+      "id": 5,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "伏線の回収が見事で、何度も鳥肌が立ちました。",
+      "en": "The way the foreshadowing paid off was brilliant, and I got goosebumps time and time again."
+    },
+    {
+      "id": 6,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "ミカサの愛情表現は控えめだけど、だからこそ深く伝わってきます。",
+      "en": "Mikasa's way of showing affection is subtle, but that's exactly what makes it feel so profound."
+    },
+    {
+      "id": 7,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "壁の外の世界が明かされるシーンは本当に衝撃的でした。",
+      "en": "The scene where the world outside the walls is revealed was truly shocking."
+    },
+    {
+      "id": 8,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "アルミンの演説シーンは毎回胸が熱くなります。",
+      "en": "Armin's speech scenes always fill me with emotion."
+    },
+    {
+      "id": 9,
+      "theme": "anime",
+      "sub_theme": "呪術廻戦",
+      "ja": "五条悟の強さは圧倒的で、登場するだけで画面が締まります。",
+      "en": "Gojo Satoru's strength is overwhelming, and his mere presence tightens up every scene."
+    },
+    {
+      "id": 10,
+      "theme": "anime",
+      "sub_theme": "呪術廻戦",
+      "ja": "渋谷事変の展開は息をのむほどの緊張感でした。",
+      "en": "The Shibuya Incident arc had a tension that was absolutely breathtaking."
+    },
+    {
+      "id": 11,
+      "theme": "anime",
+      "sub_theme": "呪術廻戦",
+      "ja": "釘崎野薔薇のキャラクターは個性的でとても好きです。",
+      "en": "Nobara Kugisaki is such a unique character, and I really love her."
+    },
+    {
+      "id": 12,
+      "theme": "anime",
+      "sub_theme": "呪術廻戦",
+      "ja": "戦闘シーンのアニメーションクオリティが圧倒的に高いです。",
+      "en": "The animation quality of the battle scenes is overwhelmingly impressive."
+    },
+    {
+      "id": 13,
+      "theme": "anime",
+      "sub_theme": "呪術廻戦",
+      "ja": "伏黒の術式は複雑で、理解するのに時間がかかりました。",
+      "en": "Fushiguro's technique is complex, and it took me a while to fully understand it."
+    },
+    {
+      "id": 14,
+      "theme": "anime",
+      "sub_theme": "呪術廻戦",
+      "ja": "虎杖の成長スピードには驚かされます。",
+      "en": "The speed of Itadori's growth is astonishing."
+    },
+    {
+      "id": 15,
+      "theme": "anime",
+      "sub_theme": "呪術廻戦",
+      "ja": "このアニメは「死」をとてもリアルに描いていると思います。",
+      "en": "I think this anime portrays death in a very realistic way."
+    },
+    {
+      "id": 16,
+      "theme": "anime",
+      "sub_theme": "鬼滅の刃",
+      "ja": "炭治郎の優しさと強さのバランスが絶妙です。",
+      "en": "The balance between Tanjiro's kindness and strength is perfectly crafted."
+    },
+    {
+      "id": 17,
+      "theme": "anime",
+      "sub_theme": "鬼滅の刃",
+      "ja": "遊郭編の宇髄さんの戦闘シーンは派手でテンションが上がりました。",
+      "en": "Uzui's battle scenes in the Entertainment District arc were flashy and got me totally pumped up."
+    },
+    {
+      "id": 18,
+      "theme": "anime",
+      "sub_theme": "鬼滅の刃",
+      "ja": "禰豆子が人を守るために戦うシーンは毎回感動します。",
+      "en": "Every time Nezuko fights to protect people, I am deeply moved."
+    },
+    {
+      "id": 19,
+      "theme": "anime",
+      "sub_theme": "鬼滅の刃",
+      "ja": "悪役である鬼にも感情移入できるのがこの作品の魅力です。",
+      "en": "One of the charms of this series is that you can empathize even with the demons who are the villains."
+    },
+    {
+      "id": 20,
+      "theme": "anime",
+      "sub_theme": "鬼滅の刃",
+      "ja": "煉獄さんのセリフは今でも心に残っています。",
+      "en": "Rengoku's lines still resonate with me to this day."
+    },
+    {
+      "id": 21,
+      "theme": "anime",
+      "sub_theme": "鬼滅の刃",
+      "ja": "音楽と映像の組み合わせが素晴らしく、何度も見返してしまいます。",
+      "en": "The combination of music and visuals is so wonderful that I keep watching it over and over."
+    },
+    {
+      "id": 22,
+      "theme": "anime",
+      "sub_theme": "鬼滅の刃",
+      "ja": "無限列車編は劇場で観て号泣しました。",
+      "en": "I watched the Mugen Train arc in the theater and cried my eyes out."
+    },
+    {
+      "id": 23,
+      "theme": "anime",
+      "sub_theme": "君の名は",
+      "ja": "映像の美しさは息をのむほどで、まるで絵画のようでした。",
+      "en": "The beauty of the visuals was breathtaking, almost like watching a painting come to life."
+    },
+    {
+      "id": 24,
+      "theme": "anime",
+      "sub_theme": "君の名は",
+      "ja": "入れ替わりの設定がとても新鮮で引き込まれました。",
+      "en": "The body-swapping concept felt very fresh and I was completely drawn in."
+    },
+    {
+      "id": 25,
+      "theme": "anime",
+      "sub_theme": "君の名は",
+      "ja": "クライマックスの展開に思わず涙が止まりませんでした。",
+      "en": "I couldn't stop the tears from flowing during the climax."
+    },
+    {
+      "id": 26,
+      "theme": "anime",
+      "sub_theme": "君の名は",
+      "ja": "RADWIMPSの音楽が作品の世界観をさらに高めていました。",
+      "en": "RADWIMPS' music elevated the world of the film even further."
+    },
+    {
+      "id": 27,
+      "theme": "anime",
+      "sub_theme": "君の名は",
+      "ja": "あの「すきだ」のシーンは何年経っても忘れられません。",
+      "en": "That 'I love you' scene is something I will never forget, no matter how many years pass."
+    },
+    {
+      "id": 28,
+      "theme": "anime",
+      "sub_theme": "ワンピース",
+      "ja": "マリンフォード編は今まで見たアニメの中で最も感動しました。",
+      "en": "The Marineford arc moved me more than any other anime arc I have ever seen."
+    },
+    {
+      "id": 29,
+      "theme": "anime",
+      "sub_theme": "ワンピース",
+      "ja": "ルフィの仲間への想いは見ているだけで元気をもらえます。",
+      "en": "Just watching Luffy's feelings for his crew gives me energy."
+    },
+    {
+      "id": 30,
+      "theme": "anime",
+      "sub_theme": "ワンピース",
+      "ja": "エースの死は衝撃が大きすぎて、しばらく立ち直れませんでした。",
+      "en": "Ace's death was such a massive shock that I couldn't recover for a while."
+    },
+    {
+      "id": 31,
+      "theme": "anime",
+      "sub_theme": "ワンピース",
+      "ja": "尾田先生の伏線の張り方は天才的だと思います。",
+      "en": "I think Oda sensei's way of laying out foreshadowing is pure genius."
+    },
+    {
+      "id": 32,
+      "theme": "anime",
+      "sub_theme": "ワンピース",
+      "ja": "ゾロの迷子キャラはもはやギャグとして愛されています。",
+      "en": "Zoro's lost-in-directions character has become a beloved running gag at this point."
+    },
+    {
+      "id": 33,
+      "theme": "anime",
+      "sub_theme": "ワンピース",
+      "ja": "ビッグマムの過去編は悪役への見方を大きく変えてくれました。",
+      "en": "Big Mom's backstory arc really changed the way I look at villains."
+    },
+    {
+      "id": 34,
+      "theme": "anime",
+      "sub_theme": "ナルト",
+      "ja": "ナルトとサスケのライバル関係は少年漫画の王道だと思います。",
+      "en": "The rivalry between Naruto and Sasuke feels like the classic shonen manga template."
+    },
+    {
+      "id": 35,
+      "theme": "anime",
+      "sub_theme": "ナルト",
+      "ja": "ペイン編のナルトの演説シーンは何度見ても鳥肌が立ちます。",
+      "en": "No matter how many times I watch Naruto's speech scene in the Pain arc, I get goosebumps."
+    },
+    {
+      "id": 36,
+      "theme": "anime",
+      "sub_theme": "ナルト",
+      "ja": "イタチの真実が明かされたときは本当に驚きました。",
+      "en": "I was truly astonished when Itachi's true nature was revealed."
+    },
+    {
+      "id": 37,
+      "theme": "anime",
+      "sub_theme": "ナルト",
+      "ja": "我愛羅の変化は最もドラマチックなキャラクター成長のひとつです。",
+      "en": "Gaara's transformation is one of the most dramatic character developments in the series."
+    },
+    {
+      "id": 38,
+      "theme": "anime",
+      "sub_theme": "僕のヒーローアカデミア",
+      "ja": "デクが諦めずに成長していく姿は毎回勇気をもらえます。",
+      "en": "Watching Deku keep growing without giving up gives me courage every time."
+    },
+    {
+      "id": 39,
+      "theme": "anime",
+      "sub_theme": "僕のヒーローアカデミア",
+      "ja": "オールマイトの限界を超えた戦いは胸が熱くなりました。",
+      "en": "All Might's battle beyond his limits filled me with a burning passion."
+    },
+    {
+      "id": 40,
+      "theme": "anime",
+      "sub_theme": "僕のヒーローアカデミア",
+      "ja": "個性の設定がとにかく豊かで飽きません。",
+      "en": "The Quirk system is so richly designed that I never get bored of it."
+    },
+    {
+      "id": 41,
+      "theme": "anime",
+      "sub_theme": "僕のヒーローアカデミア",
+      "ja": "爆豪のキャラクターは最初は嫌いでしたが、だんだん好きになりました。",
+      "en": "I didn't like Bakugo's character at first, but I gradually grew to like him."
+    },
+    {
+      "id": 42,
+      "theme": "anime",
+      "sub_theme": "僕のヒーローアカデミア",
+      "ja": "ヴィランのトガちゃんはむしろ応援してしまいます。",
+      "en": "I actually find myself rooting for the villain Toga."
+    },
+    {
+      "id": 43,
+      "theme": "anime",
+      "sub_theme": "SPY×FAMILY",
+      "ja": "アーニャのリアクションが毎回面白すぎてクセになります。",
+      "en": "Anya's reactions are so funny every time that they become totally addictive."
+    },
+    {
+      "id": 44,
+      "theme": "anime",
+      "sub_theme": "SPY×FAMILY",
+      "ja": "ロイドとヨルの関係がだんだんリアルな家族になっていくのが微笑ましいです。",
+      "en": "It's heartwarming to watch Loid and Yor gradually become a real family."
+    },
+    {
+      "id": 45,
+      "theme": "anime",
+      "sub_theme": "SPY×FAMILY",
+      "ja": "シリアスとコメディのバランスが絶妙で、毎週楽しみにしています。",
+      "en": "The balance between serious moments and comedy is perfect, and I look forward to it every week."
+    },
+    {
+      "id": 46,
+      "theme": "anime",
+      "sub_theme": "SPY×FAMILY",
+      "ja": "ヨルさんの天然な強さキャラはもっと見たいです。",
+      "en": "I want to see more of Yor's naturally powerful character."
+    },
+    {
+      "id": 47,
+      "theme": "anime",
+      "sub_theme": "葬送のフリーレン",
+      "ja": "フリーレンの時間感覚は長命種ならではの哲学を感じます。",
+      "en": "Frieren's sense of time gives you a sense of a philosophy unique to long-lived beings."
+    },
+    {
+      "id": 48,
+      "theme": "anime",
+      "sub_theme": "葬送のフリーレン",
+      "ja": "旅の途中で過去の仲間を思い出すシーンは静かに泣けます。",
+      "en": "The scenes where she remembers her past companions during the journey make you cry quietly."
+    },
+    {
+      "id": 49,
+      "theme": "anime",
+      "sub_theme": "葬送のフリーレン",
+      "ja": "魔法の設定がとても緻密で世界観に深みを与えています。",
+      "en": "The magic system is incredibly detailed and gives great depth to the world."
+    },
+    {
+      "id": 50,
+      "theme": "anime",
+      "sub_theme": "葬送のフリーレン",
+      "ja": "ゆったりとしたテンポが逆に心地よく感じられます。",
+      "en": "The slow, gentle pacing paradoxically feels very comfortable to watch."
+    },
+    {
+      "id": 51,
+      "theme": "anime",
+      "sub_theme": "葬送のフリーレン",
+      "ja": "フェルンとフリーレンの師弟関係がとても好きです。",
+      "en": "I really love the master-student relationship between Fern and Frieren."
+    },
+    {
+      "id": 52,
+      "theme": "anime",
+      "sub_theme": "チェンソーマン",
+      "ja": "デンジのキャラクターは今まであまり見たことないタイプで新鮮でした。",
+      "en": "Denji's character felt fresh because he's a type I haven't really seen before."
+    },
+    {
+      "id": 53,
+      "theme": "anime",
+      "sub_theme": "チェンソーマン",
+      "ja": "マキマのキャラクターは最後まで読者を翻弄し続けました。",
+      "en": "Makima's character kept manipulating the reader right until the very end."
+    },
+    {
+      "id": 54,
+      "theme": "anime",
+      "sub_theme": "チェンソーマン",
+      "ja": "暴力描写は過激ですが、それが作品のメッセージと直結していると思います。",
+      "en": "The violent depictions are intense, but I think they are directly tied to the work's message."
+    },
+    {
+      "id": 55,
+      "theme": "anime",
+      "sub_theme": "チェンソーマン",
+      "ja": "パワーのギャグシーンと感動シーンの落差が激しくて好きです。",
+      "en": "I love the dramatic contrast between Power's comedic scenes and her emotional scenes."
+    },
+    {
+      "id": 56,
+      "theme": "anime",
+      "sub_theme": "ダンジョン飯",
+      "ja": "ファンタジーと料理を組み合わせた発想が独創的すぎます。",
+      "en": "The idea of combining fantasy and cooking is incredibly original."
+    },
+    {
+      "id": 57,
+      "theme": "anime",
+      "sub_theme": "ダンジョン飯",
+      "ja": "ライオスの変人キャラが愛おしくてたまりません。",
+      "en": "Laios's eccentric character is so endearing that I can't help but love him."
+    },
+    {
+      "id": 58,
+      "theme": "anime",
+      "sub_theme": "ダンジョン飯",
+      "ja": "モンスター料理の描写がリアルで思わず食べたくなります。",
+      "en": "The depictions of monster cuisine are so realistic that I actually want to try eating it."
+    },
+    {
+      "id": 59,
+      "theme": "anime",
+      "sub_theme": "ダンジョン飯",
+      "ja": "キャラクターそれぞれのバックストーリーが丁寧に描かれています。",
+      "en": "Each character's backstory is depicted with great care."
+    },
+    {
+      "id": 60,
+      "theme": "anime",
+      "sub_theme": "推しの子",
+      "ja": "芸能界の裏側をここまでリアルに描いた作品は珍しいと思います。",
+      "en": "I think it's rare to see a work that depicts the behind-the-scenes of the entertainment industry this realistically."
+    },
+    {
+      "id": 61,
+      "theme": "anime",
+      "sub_theme": "推しの子",
+      "ja": "第一話のインパクトは視聴者全員に衝撃を与えたと思います。",
+      "en": "I think the impact of the first episode came as a shock to every viewer."
+    },
+    {
+      "id": 62,
+      "theme": "anime",
+      "sub_theme": "推しの子",
+      "ja": "アクアの二面性のあるキャラクターが見ていて飽きません。",
+      "en": "Aqua's two-sided character never gets boring to watch."
+    },
+    {
+      "id": 63,
+      "theme": "anime",
+      "sub_theme": "推しの子",
+      "ja": "ルビーの純粋さとアクアの計算高さの対比が面白いです。",
+      "en": "The contrast between Ruby's pure nature and Aqua's calculating personality is fascinating."
+    },
+    {
+      "id": 64,
+      "theme": "anime",
+      "sub_theme": "転スラ",
+      "ja": "リムルの無双展開は見ていてスカッとします。",
+      "en": "Watching Rimuru's overwhelming victories is incredibly satisfying."
+    },
+    {
+      "id": 65,
+      "theme": "anime",
+      "sub_theme": "転スラ",
+      "ja": "魔王たちとのバトルよりも国づくりのパートが好きです。",
+      "en": "I prefer the nation-building parts over the battles with the Demon Lords."
+    },
+    {
+      "id": 66,
+      "theme": "anime",
+      "sub_theme": "転スラ",
+      "ja": "テンペストが成長していく過程がとても丁寧に描かれています。",
+      "en": "The process of Tempest growing and developing is depicted very carefully."
+    },
+    {
+      "id": 67,
+      "theme": "anime",
+      "sub_theme": "ヴァイオレット・エヴァーガーデン",
+      "ja": "ヴァイオレットが感情を学んでいく過程が涙なしには見られません。",
+      "en": "The process of Violet learning about emotions cannot be watched without tears."
+    },
+    {
+      "id": 68,
+      "theme": "anime",
+      "sub_theme": "ヴァイオレット・エヴァーガーデン",
+      "ja": "映像美は京都アニメーションの技術の粋を集めたものだと思います。",
+      "en": "I believe the visual beauty represents the pinnacle of Kyoto Animation's craft."
+    },
+    {
+      "id": 69,
+      "theme": "anime",
+      "sub_theme": "ヴァイオレット・エヴァーガーデン",
+      "ja": "各エピソードの手紙の内容がどれも深く心に刺さります。",
+      "en": "The content of the letters in each episode deeply pierces my heart."
+    },
+    {
+      "id": 70,
+      "theme": "anime",
+      "sub_theme": "ヴァイオレット・エヴァーガーデン",
+      "ja": "最終回は何度見ても泣いてしまいます。",
+      "en": "No matter how many times I watch the final episode, I always end up crying."
+    },
+    {
+      "id": 71,
+      "theme": "anime",
+      "sub_theme": "異世界系全般",
+      "ja": "最近の異世界アニメはパターンが似てきていると感じます。",
+      "en": "I feel like recent isekai anime have started to follow similar patterns."
+    },
+    {
+      "id": 72,
+      "theme": "anime",
+      "sub_theme": "異世界系全般",
+      "ja": "それでも好きな異世界作品は何度でも見返してしまいます。",
+      "en": "Even so, I find myself rewatching my favorite isekai works over and over."
+    },
+    {
+      "id": 73,
+      "theme": "anime",
+      "sub_theme": "異世界系全般",
+      "ja": "チート設定が多すぎると感情移入しにくくなります。",
+      "en": "When there are too many cheat-like abilities, it becomes harder to empathize with the character."
+    },
+    {
+      "id": 74,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメは一気見してしまいました。",
+      "en": "I ended up binge-watching this anime in one go."
+    },
+    {
+      "id": 75,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "原作ファンとしては、アニメ化のクオリティに満足しています。",
+      "en": "As a fan of the original work, I am satisfied with the quality of the anime adaptation."
+    },
+    {
+      "id": 76,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "サントラを聴くだけで名シーンが頭に浮かびます。",
+      "en": "Just listening to the soundtrack brings iconic scenes to mind."
+    },
+    {
+      "id": 77,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "続きが気になりすぎて原作を買ってしまいました。",
+      "en": "I was so curious about what happens next that I ended up buying the original manga."
+    },
+    {
+      "id": 78,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシーンで泣いてしまいました。",
+      "en": "This scene moved me to tears."
+    },
+    {
+      "id": 79,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "主人公の成長が見ていて気持ちよかったです。",
+      "en": "It was so satisfying to watch the protagonist grow."
+    },
+    {
+      "id": 80,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "脇役のキャラクターも丁寧に描かれていて好きです。",
+      "en": "I love how even the supporting characters are depicted with great care."
+    },
+    {
+      "id": 81,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "オープニング曲がとにかく好きで毎回スキップしません。",
+      "en": "I love the opening song so much that I never skip it."
+    },
+    {
+      "id": 82,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "伏線の回収が見事でした。",
+      "en": "The way the foreshadowing paid off was brilliant."
+    },
+    {
+      "id": 83,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "最終回の後、しばらく放心状態でした。",
+      "en": "After the final episode, I was in a daze for a while."
+    },
+    {
+      "id": 84,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメは友達にも強くおすすめしました。",
+      "en": "I strongly recommended this anime to my friends as well."
+    },
+    {
+      "id": 85,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "作画崩壊が気になって話に集中できないことがありました。",
+      "en": "There were times when the animation quality drop bothered me so much that I couldn't focus on the story."
+    },
+    {
+      "id": 86,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "キャラクターのセリフが刺さりすぎて、スクショを撮りました。",
+      "en": "Some of the character's lines hit so hard that I took screenshots of them."
+    },
+    {
+      "id": 87,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメは見る人の価値観を変える力があると思います。",
+      "en": "I think this anime has the power to change the values of those who watch it."
+    },
+    {
+      "id": 88,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "何年経っても色あせない名作だと思います。",
+      "en": "I believe this is a masterpiece that will never fade no matter how many years pass."
+    },
+    {
+      "id": 89,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "2周目で気づいた伏線が多くて驚きました。",
+      "en": "I was surprised by how many foreshadowings I noticed on my second watch."
+    },
+    {
+      "id": 90,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "悪役なのに応援してしまうほど魅力的なキャラでした。",
+      "en": "The character was so compelling that I found myself rooting for them even though they were a villain."
+    },
+    {
+      "id": 91,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシーンの演出は映画レベルだと思います。",
+      "en": "I think the direction in this scene is on par with a feature film."
+    },
+    {
+      "id": 92,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "声優さんの演技が素晴らしくて感情がより伝わってきました。",
+      "en": "The voice actors' performances were wonderful and conveyed the emotions even more powerfully."
+    },
+    {
+      "id": 93,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "アニメ化を機に原作も全部読みました。",
+      "en": "Using the anime adaptation as an opportunity, I read all of the original work too."
+    },
+    {
+      "id": 94,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このエピソードだけで何度泣いたかわかりません。",
+      "en": "I can't even count how many times I cried just from this episode."
+    },
+    {
+      "id": 95,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "ラストシーンの余韻がずっと残っています。",
+      "en": "The lingering feeling from the final scene has stayed with me ever since."
+    },
+    {
+      "id": 96,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメを見て、人生観が少し変わった気がします。",
+      "en": "After watching this anime, I feel like my outlook on life has changed a little."
+    },
+    {
+      "id": 97,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "期待しすぎていたせいか、少し物足りなく感じました。",
+      "en": "Perhaps because my expectations were too high, I found it slightly lacking."
+    },
+    {
+      "id": 98,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "映像と音楽の相乗効果でそのシーンが完璧になっていました。",
+      "en": "The synergy between the visuals and music made that scene absolutely perfect."
+    },
+    {
+      "id": 99,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このキャラクターは最初嫌いでしたが、今では一番好きです。",
+      "en": "I used to dislike this character, but now they are my absolute favorite."
+    },
+    {
+      "id": 100,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "テンポが早すぎて原作未読だと少しついていけない部分がありました。",
+      "en": "The pacing was so fast that there were parts that were a little hard to follow if you hadn't read the original."
+    },
+    {
+      "id": 101,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメの世界観に完全に没入してしまいました。",
+      "en": "I became completely immersed in the world of this anime."
+    },
+    {
+      "id": 102,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "続編が出るとしたら絶対見ます。",
+      "en": "If a sequel comes out, I will definitely watch it."
+    },
+    {
+      "id": 103,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "友達と一緒に見たら倍楽しめました。",
+      "en": "Watching it with friends made it twice as enjoyable."
+    },
+    {
+      "id": 104,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメを見終わった後は満足感でいっぱいでした。",
+      "en": "After finishing this anime, I was filled with a sense of satisfaction."
+    },
+    {
+      "id": 105,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシリーズのファンアートを見るのも楽しみのひとつです。",
+      "en": "Looking at fan art of this series is one of my joys as well."
+    },
+    {
+      "id": 106,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "原作者の世界観の作り込みに毎回驚かされます。",
+      "en": "I am always amazed by how thoroughly the original author builds their world."
+    },
+    {
+      "id": 107,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメは大人になってから見るとまた違う感動があります。",
+      "en": "Watching this anime as an adult gives you a different kind of emotional experience."
+    },
+    {
+      "id": 108,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "タイトルを見ただけで泣けるようになってしまいました。",
+      "en": "Just seeing the title is enough to make me tear up now."
+    },
+    {
+      "id": 109,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメをきっかけにアニメにはまりました。",
+      "en": "This anime is what got me hooked on anime in the first place."
+    },
+    {
+      "id": 110,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "聖地巡礼で作品の舞台を実際に訪れたいです。",
+      "en": "I want to visit the actual locations that served as the setting of the work on a pilgrimage."
+    },
+    {
+      "id": 111,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシーンの音楽の使い方が天才的だと思います。",
+      "en": "I think the way the music is used in this scene is absolutely genius."
+    },
+    {
+      "id": 112,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "キャラクターのデザインが好みすぎて、グッズをつい買ってしまいます。",
+      "en": "I love the character designs so much that I end up buying merchandise without thinking."
+    },
+    {
+      "id": 113,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシリーズを知らない人に説明するのが難しいくらい独特な作品です。",
+      "en": "This work is so unique that it's hard to explain to someone who doesn't know the series."
+    },
+    {
+      "id": 114,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "アニメを見た後に考察サイトを読むのが習慣になっています。",
+      "en": "Reading theory sites after watching an anime has become a habit of mine."
+    },
+    {
+      "id": 115,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "この作品は何度見ても新しい発見があります。",
+      "en": "No matter how many times I watch this work, I always find something new."
+    },
+    {
+      "id": 116,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "この映画の配給権を北米市場で取得しました。",
+      "en": "We acquired the distribution rights for this film in the North American market."
+    },
+    {
+      "id": 117,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "そのレーベルとの独占契約を交渉中です。",
+      "en": "We are negotiating an exclusive contract with the label."
+    },
+    {
+      "id": 118,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "著作権の侵害に対して法的措置を取ることを検討しています。",
+      "en": "We are considering taking legal action against the copyright infringement."
+    },
+    {
+      "id": 119,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "ライセンス契約の条件を再交渉する必要があります。",
+      "en": "We need to renegotiate the terms of the licensing agreement."
+    },
+    {
+      "id": 120,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "このIPの二次利用権を新たなパートナーに付与しました。",
+      "en": "We granted secondary use rights for this IP to a new partner."
+    },
+    {
+      "id": 121,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "契約満了前に更新の意思を確認しておく必要があります。",
+      "en": "We need to confirm the intention to renew before the contract expires."
+    },
+    {
+      "id": 122,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "海外向けのマーチャンダイジング権を別途設定しました。",
+      "en": "We set up separate merchandising rights for overseas markets."
+    },
+    {
+      "id": 123,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "そのアーティストのマネジメント契約が終了しました。",
+      "en": "The management contract with the artist has come to an end."
+    },
+    {
+      "id": 124,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "ストリーミングサービスの契約者数が今年度で1000万人を超えました。",
+      "en": "The number of streaming service subscribers has exceeded 10 million this fiscal year."
+    },
+    {
+      "id": 125,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "独占配信コンテンツの制作に力を入れています。",
+      "en": "We are putting effort into producing exclusive streaming content."
+    },
+    {
+      "id": 126,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "ライブ配信の同時接続数が過去最高を記録しました。",
+      "en": "The number of simultaneous connections during the live stream hit an all-time high."
+    },
+    {
+      "id": 127,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "コンテンツのグローバル同時配信を実現しました。",
+      "en": "We achieved simultaneous global distribution of our content."
+    },
+    {
+      "id": 128,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "広告収入モデルからサブスクリプションモデルへ移行します。",
+      "en": "We are shifting from an advertising revenue model to a subscription model."
+    },
+    {
+      "id": 129,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "プレミアムプランの解約率を下げることが急務です。",
+      "en": "Reducing the cancellation rate of the premium plan is an urgent priority."
+    },
+    {
+      "id": 130,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "海外ユーザー向けに字幕と吹き替えの両方を用意しました。",
+      "en": "We prepared both subtitles and dubbing for overseas users."
+    },
+    {
+      "id": 131,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "コンテンツの視聴完了率を分析して次の企画に活かします。",
+      "en": "We will analyze the content completion rate and apply the insights to our next project."
+    },
+    {
+      "id": 132,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "インフルエンサーとのコラボキャンペーンを計画しています。",
+      "en": "We are planning a collaboration campaign with influencers."
+    },
+    {
+      "id": 133,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "SNSでのバズを狙ったティザー映像を公開しました。",
+      "en": "We released a teaser video aimed at going viral on social media."
+    },
+    {
+      "id": 134,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "ターゲット層に合わせてプロモーション戦略を見直しました。",
+      "en": "We revised our promotional strategy to better match our target audience."
+    },
+    {
+      "id": 135,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "プレスリリースを主要メディアに一斉配信しました。",
+      "en": "We simultaneously distributed the press release to major media outlets."
+    },
+    {
+      "id": 136,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "ファンミーティングを開催してコアなファン層との関係を強化しました。",
+      "en": "We held a fan meeting to strengthen our relationship with the core fan base."
+    },
+    {
+      "id": 137,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "グローバルキャンペーンのローカライズに苦労しています。",
+      "en": "We are struggling with the localization of the global campaign."
+    },
+    {
+      "id": 138,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "タイアップ企画でブランド認知度を大幅に向上させました。",
+      "en": "We significantly improved brand awareness through our tie-up campaign."
+    },
+    {
+      "id": 139,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "口コミマーケティングの効果が数字に表れてきました。",
+      "en": "The effects of word-of-mouth marketing are starting to show up in the numbers."
+    },
+    {
+      "id": 140,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "この映画の全国公開は来月に迫っています。",
+      "en": "The nationwide release of this film is just around the corner next month."
+    },
+    {
+      "id": 141,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "イベントのチケットは発売開始から数分で完売しました。",
+      "en": "Tickets for the event sold out within minutes of going on sale."
+    },
+    {
+      "id": 142,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "興行収入が予想の2倍を超える結果となりました。",
+      "en": "The box office revenue ended up exceeding twice our initial projections."
+    },
+    {
+      "id": 143,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "海外でのプレミア上映を成功させるために現地のPR会社と連携しました。",
+      "en": "We worked with a local PR firm to successfully pull off the overseas premiere screening."
+    },
+    {
+      "id": 144,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "音楽フェスの来場者数が昨年比30%増加しました。",
+      "en": "The number of attendees at the music festival increased by 30 percent compared to last year."
+    },
+    {
+      "id": 145,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "悪天候の影響でアウトドアイベントを延期せざるを得ませんでした。",
+      "en": "We were forced to postpone the outdoor event due to the impact of bad weather."
+    },
+    {
+      "id": 146,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "VIPチケットの特典内容を見直してさらなる付加価値を提供します。",
+      "en": "We will review the benefits of VIP tickets to provide even greater added value."
+    },
+    {
+      "id": 147,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "会場のキャパシティを超える申し込みがあり、追加公演を決定しました。",
+      "en": "We received applications exceeding the venue capacity and decided to add additional performances."
+    },
+    {
+      "id": 148,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "シーズン2の制作が正式に決定しました。",
+      "en": "The production of Season 2 has been officially confirmed."
+    },
+    {
+      "id": 149,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "脚本の修正に時間がかかり、公開スケジュールが遅れています。",
+      "en": "Script revisions are taking time, causing delays in the release schedule."
+    },
+    {
+      "id": 150,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "この作品は世界50カ国以上で同時配信される予定です。",
+      "en": "This work is scheduled to be simultaneously distributed in more than 50 countries worldwide."
+    },
+    {
+      "id": 151,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "撮影クルーの安全確保を最優先に現場を運営しています。",
+      "en": "We are operating the set with the safety of the filming crew as the top priority."
+    },
+    {
+      "id": 152,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "スタジオとの共同制作で新たな表現に挑戦しています。",
+      "en": "We are challenging ourselves with new forms of expression through co-production with the studio."
+    },
+    {
+      "id": 153,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "CGとリアル映像の融合が作品の大きな特徴です。",
+      "en": "The fusion of CG and live-action footage is one of the major features of the work."
+    },
+    {
+      "id": 154,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "視聴者の反応を見ながら最終話の演出を微調整しました。",
+      "en": "We made fine adjustments to the direction of the final episode while monitoring viewer reactions."
+    },
+    {
+      "id": 155,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "予算の制約の中でクリエイティブの質を落とさないよう工夫しました。",
+      "en": "We worked hard to maintain the quality of the creative work within budget constraints."
+    },
+    {
+      "id": 156,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "そのアーティストとのスポンサー契約を結びました。",
+      "en": "We signed a sponsorship deal with the artist."
+    },
+    {
+      "id": 157,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "新人タレントの育成プログラムを強化しています。",
+      "en": "We are strengthening our program for developing new talent."
+    },
+    {
+      "id": 158,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "そのバンドのワールドツアーのスポンサーになりました。",
+      "en": "We became a sponsor of the band's world tour."
+    },
+    {
+      "id": 159,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "タレントのSNS影響力がブランドの売上に直結しています。",
+      "en": "The talent's social media influence is directly tied to the brand's sales."
+    },
+    {
+      "id": 160,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "契約更新の条件について双方で合意に至りました。",
+      "en": "Both parties have reached an agreement on the terms of the contract renewal."
+    },
+    {
+      "id": 161,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "デビューから1年で海外でも注目されるアーティストになりました。",
+      "en": "The artist went from debut to gaining international attention in just one year."
+    },
+    {
+      "id": 162,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "そのタレントはブランドアンバサダーとして起用することが決まりました。",
+      "en": "It has been decided that the talent will be appointed as a brand ambassador."
+    },
+    {
+      "id": 163,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "独立後初のアルバムが全国チャートで1位を獲得しました。",
+      "en": "The first album after going independent reached number one on the national charts."
+    },
+    {
+      "id": 164,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "アジア市場への本格展開を今期からスタートします。",
+      "en": "We will start our full-scale expansion into the Asian market from this term."
+    },
+    {
+      "id": 165,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "海外現地法人の設立に向けて準備を進めています。",
+      "en": "We are making preparations toward establishing a local subsidiary overseas."
+    },
+    {
+      "id": 166,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "現地の文化に合わせたコンテンツのアレンジが必要です。",
+      "en": "It is necessary to adapt the content to suit the local culture."
+    },
+    {
+      "id": 167,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "グローバルパートナーとの協業でリーチを広げています。",
+      "en": "We are expanding our reach through collaboration with global partners."
+    },
+    {
+      "id": 168,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "海外メディアへの露出を増やすためにPR会社を起用しました。",
+      "en": "We hired a PR firm to increase our exposure in overseas media."
+    },
+    {
+      "id": 169,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "現地の規制に対応するためにリーガルチェックを強化しました。",
+      "en": "We strengthened our legal checks to comply with local regulations."
+    },
+    {
+      "id": 170,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "欧米市場と東南アジア市場では戦略を分けて考えています。",
+      "en": "We are developing separate strategies for the Western and Southeast Asian markets."
+    },
+    {
+      "id": 171,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "海外版のローカライズはネイティブチームに委託しています。",
+      "en": "We are outsourcing the localization of the overseas version to a native team."
+    },
+    {
+      "id": 172,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "今回の提案についてご検討いただけますでしょうか。",
+      "en": "Would you be able to consider our proposal?"
+    },
+    {
+      "id": 173,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "条件についてはまだ調整の余地があると思います。",
+      "en": "I believe there is still room for adjustment regarding the terms."
+    },
+    {
+      "id": 174,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "ご提案の内容は非常に魅力的です。社内で確認してから返答します。",
+      "en": "Your proposal is very attractive. I will check internally and get back to you."
+    },
+    {
+      "id": 175,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "今週中に意思決定ができるかどうか確認させてください。",
+      "en": "Please let me check whether we can make a decision by the end of this week."
+    },
+    {
+      "id": 176,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "双方にとってウィンウィンの関係を築きたいと考えています。",
+      "en": "We are looking to build a win-win relationship for both parties."
+    },
+    {
+      "id": 177,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "契約書の最終版を確認してからサインします。",
+      "en": "I will sign after reviewing the final version of the contract."
+    },
+    {
+      "id": 178,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "次回のミーティングでより詳細な提案をさせていただきます。",
+      "en": "We will present a more detailed proposal at our next meeting."
+    },
+    {
+      "id": 179,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "予算の上限について事前に共有しておきたいと思います。",
+      "en": "I would like to share the budget ceiling with you in advance."
+    },
+    {
+      "id": 180,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "視聴率のデータをもとに編成を見直します。",
+      "en": "We will revise our programming based on the ratings data."
+    },
+    {
+      "id": 181,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "ユーザーの行動データを分析してコンテンツ戦略に活かします。",
+      "en": "We will analyze user behavior data and apply the insights to our content strategy."
+    },
+    {
+      "id": 182,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "今月のエンゲージメント率は先月比で15%上昇しました。",
+      "en": "This month's engagement rate rose 15 percent compared to last month."
+    },
+    {
+      "id": 183,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "リテンション率の改善が最大の課題です。",
+      "en": "Improving the retention rate is our biggest challenge."
+    },
+    {
+      "id": 184,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "A/Bテストの結果を踏まえてUI改善を進めます。",
+      "en": "We will proceed with UI improvements based on the results of the A/B test."
+    },
+    {
+      "id": 185,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "コンバージョン率を上げるための施策を検討しています。",
+      "en": "We are considering measures to improve the conversion rate."
+    },
+    {
+      "id": 186,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "顧客満足度調査の結果を全社で共有しました。",
+      "en": "We shared the results of the customer satisfaction survey across the entire company."
+    },
+    {
+      "id": 187,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "ダッシュボードをリアルタイムで確認できる環境を整えました。",
+      "en": "We established an environment where the dashboard can be monitored in real time."
+    },
+    {
+      "id": 188,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "短尺動画コンテンツの需要が急速に高まっています。",
+      "en": "Demand for short-form video content is rising rapidly."
+    },
+    {
+      "id": 189,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "AIを活用したコンテンツ制作が業界標準になりつつあります。",
+      "en": "AI-powered content creation is becoming an industry standard."
+    },
+    {
+      "id": 190,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "ポッドキャスト市場は今後も成長が見込まれます。",
+      "en": "The podcast market is expected to continue growing going forward."
+    },
+    {
+      "id": 191,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "没入型エンターテインメントへの投資が活発化しています。",
+      "en": "Investment in immersive entertainment is becoming increasingly active."
+    },
+    {
+      "id": 192,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "サブスクリプション疲れによる解約が増加傾向にあります。",
+      "en": "Cancellations due to subscription fatigue are on the rise."
+    },
+    {
+      "id": 193,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "ライブエコノミーの回復が業界全体に好影響を与えています。",
+      "en": "The recovery of the live economy is having a positive impact on the entire industry."
+    },
+    {
+      "id": 194,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "コンテンツの多様性と包括性がますます重要視されています。",
+      "en": "Diversity and inclusivity in content are being valued more and more."
+    },
+    {
+      "id": 195,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "IPの複数メディア展開がビジネスの主流になっています。",
+      "en": "Multi-media development of IP has become the mainstream business approach."
+    },
+    {
+      "id": 196,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "プロジェクトの進捗を週次で共有することにしました。",
+      "en": "We have decided to share the project progress on a weekly basis."
+    },
+    {
+      "id": 197,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "スコープが広がりすぎてスケジュールに影響が出ています。",
+      "en": "The scope has expanded too much and is affecting the schedule."
+    },
+    {
+      "id": 198,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "リソースの配分を見直してボトルネックを解消します。",
+      "en": "We will review resource allocation to resolve the bottleneck."
+    },
+    {
+      "id": 199,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "ステークホルダーへの定期的な報告が重要です。",
+      "en": "Regular reporting to stakeholders is important."
+    },
+    {
+      "id": 200,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "納期に間に合わせるために優先順位を整理しましょう。",
+      "en": "Let's organize our priorities to meet the deadline."
+    },
+    {
+      "id": 201,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "クロスファンクショナルチームで取り組むことを提案します。",
+      "en": "I propose tackling this with a cross-functional team."
+    },
+    {
+      "id": 202,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "このタスクのオーナーを明確にする必要があります。",
+      "en": "We need to clearly define the owner of this task."
+    },
+    {
+      "id": 203,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "リスク管理の観点から代替案を用意しておきましょう。",
+      "en": "From a risk management perspective, let's prepare alternative plans."
+    },
+    {
+      "id": 204,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "来期の予算計画を策定する必要があります。",
+      "en": "We need to formulate the budget plan for the next fiscal year."
+    },
+    {
+      "id": 205,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "競合他社の動向を定期的にモニタリングしています。",
+      "en": "We regularly monitor the movements of our competitors."
+    },
+    {
+      "id": 206,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "このプロジェクトのROIを改めて試算してみましょう。",
+      "en": "Let's recalculate the ROI of this project."
+    },
+    {
+      "id": 207,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "新規事業の立ち上げに向けて社内の合意形成を進めています。",
+      "en": "We are building internal consensus toward launching a new business."
+    },
+    {
+      "id": 208,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "パートナー企業との関係強化が今後の成長の鍵です。",
+      "en": "Strengthening relationships with partner companies is the key to future growth."
+    },
+    {
+      "id": 209,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "品質管理のプロセスを見直してミスを減らします。",
+      "en": "We will review our quality control process to reduce mistakes."
+    },
+    {
+      "id": 210,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "チームのモチベーション維持も重要なマネジメント課題です。",
+      "en": "Maintaining team motivation is also an important management challenge."
+    },
+    {
+      "id": 211,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "顧客からのクレームに迅速に対応することが信頼につながります。",
+      "en": "Responding promptly to customer complaints leads to trust."
+    },
+    {
+      "id": 212,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "このサービスの差別化ポイントを改めて整理しました。",
+      "en": "We reorganized the differentiating points of this service."
+    },
+    {
+      "id": 213,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "事業の持続可能性を考えたビジネスモデルへの転換が必要です。",
+      "en": "We need to transition to a business model that considers sustainability."
+    },
+    {
+      "id": 214,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "四半期ごとに経営陣に成果を報告しています。",
+      "en": "We report our results to management on a quarterly basis."
+    },
+    {
+      "id": 215,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "長期的なブランド価値の向上を意識した戦略を立てています。",
+      "en": "We are developing a strategy with an awareness of long-term brand value enhancement."
+    },
+    {
+      "id": 216,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "このプロジェクトは収益化まで時間がかかる見込みです。",
+      "en": "This project is expected to take time before becoming profitable."
+    },
+    {
+      "id": 217,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "クライアントのニーズを正確に把握することが最初のステップです。",
+      "en": "Accurately understanding the client's needs is the first step."
+    },
+    {
+      "id": 218,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "グローバルチームとの連携がますます重要になっています。",
+      "en": "Collaboration with the global team is becoming increasingly important."
+    },
+    {
+      "id": 219,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "投資対効果を明確にしてから次のフェーズに進みます。",
+      "en": "We will move on to the next phase after clarifying the return on investment."
+    },
+    {
+      "id": 220,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "今回の失敗から学んだことをチームで共有しました。",
+      "en": "We shared what we learned from this failure with the team."
+    },
+    {
+      "id": 221,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "ユーザーインタビューをもとにサービスを改善しました。",
+      "en": "We improved the service based on user interviews."
+    },
+    {
+      "id": 222,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "このビジネスモデルは3年以内に黒字化できると見ています。",
+      "en": "We believe this business model can reach profitability within three years."
+    },
+    {
+      "id": 223,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "社内のナレッジを共有する仕組みを整備しています。",
+      "en": "We are putting systems in place to share knowledge within the company."
+    },
+    {
+      "id": 224,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このキャラクターのセリフが頭から離れません。",
+      "en": "This character's lines just won't leave my head."
+    },
+    {
+      "id": 225,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "予想外の展開に思わず声が出てしまいました。",
+      "en": "The unexpected twist made me cry out without thinking."
+    },
+    {
+      "id": 226,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシーンは何度見ても飽きません。",
+      "en": "No matter how many times I watch this scene, I never get tired of it."
+    },
+    {
+      "id": 227,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメのおかげで日本語に興味を持ちました。",
+      "en": "This anime made me interested in the Japanese language."
+    },
+    {
+      "id": 228,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "BGMの使い方がとても効果的でした。",
+      "en": "The way the background music was used was very effective."
+    },
+    {
+      "id": 229,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメは家族で一緒に楽しめます。",
+      "en": "This anime can be enjoyed together as a family."
+    },
+    {
+      "id": 230,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "主題歌を聴くだけで自然と涙が出てきます。",
+      "en": "Just hearing the theme song naturally brings tears to my eyes."
+    },
+    {
+      "id": 231,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシリーズのグッズを集めることが趣味になっています。",
+      "en": "Collecting merchandise from this series has become a hobby of mine."
+    },
+    {
+      "id": 232,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "キャラクターの心理描写がとてもリアルで共感できます。",
+      "en": "The psychological depiction of the characters is very realistic and relatable."
+    },
+    {
+      "id": 233,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメを見てから人への接し方が少し変わりました。",
+      "en": "Since watching this anime, the way I interact with people has changed a little."
+    },
+    {
+      "id": 234,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "最終回を見終わった後、しばらく何も手につきませんでした。",
+      "en": "After finishing the final episode, I couldn't focus on anything for a while."
+    },
+    {
+      "id": 235,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシーンの色使いが美しすぎて息をのみました。",
+      "en": "The use of color in this scene was so beautiful that I caught my breath."
+    },
+    {
+      "id": 236,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメのおかげで暗い時期を乗り越えられました。",
+      "en": "Thanks to this anime, I was able to get through a difficult period."
+    },
+    {
+      "id": 237,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "原作とアニメで違う部分があるのも楽しみのひとつです。",
+      "en": "The differences between the original work and the anime are part of the fun."
+    },
+    {
+      "id": 238,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメを見るといつも元気が出ます。",
+      "en": "Watching this anime always lifts my spirits."
+    },
+    {
+      "id": 239,
+      "theme": "anime",
+      "sub_theme": "進撃の巨人",
+      "ja": "巨人の正体が明かされた瞬間は衝撃でした。",
+      "en": "The moment the true identity of the Titans was revealed was shocking."
+    },
+    {
+      "id": 240,
+      "theme": "anime",
+      "sub_theme": "呪術廻戦",
+      "ja": "領域展開のシーンはいつ見ても鳥肌が立ちます。",
+      "en": "The Domain Expansion scenes always give me goosebumps no matter when I watch them."
+    },
+    {
+      "id": 241,
+      "theme": "anime",
+      "sub_theme": "鬼滅の刃",
+      "ja": "全集中の呼吸という設定がとても好きです。",
+      "en": "I really love the concept of Total Concentration Breathing."
+    },
+    {
+      "id": 242,
+      "theme": "anime",
+      "sub_theme": "ワンピース",
+      "ja": "ナミの過去編は今でも一番泣けるエピソードです。",
+      "en": "Nami's backstory arc is still the episode that makes me cry the most."
+    },
+    {
+      "id": 243,
+      "theme": "anime",
+      "sub_theme": "SPY×FAMILY",
+      "ja": "アーニャがスパイごっこをするシーンが一番好きです。",
+      "en": "My favorite scene is when Anya plays spy."
+    },
+    {
+      "id": 244,
+      "theme": "anime",
+      "sub_theme": "葬送のフリーレン",
+      "ja": "ヒンメルへの想いがだんだん積み重なっていく描写が好きです。",
+      "en": "I love the depiction of how feelings for Himmel gradually accumulate."
+    },
+    {
+      "id": 245,
+      "theme": "anime",
+      "sub_theme": "推しの子",
+      "ja": "芸能界の光と影を両方描いている点が素晴らしいです。",
+      "en": "It is wonderful that the work depicts both the bright and dark sides of the entertainment industry."
+    },
+    {
+      "id": 246,
+      "theme": "anime",
+      "sub_theme": "ダンジョン飯",
+      "ja": "マルシルのリアクションが毎回面白すぎます。",
+      "en": "Marcille's reactions are too funny every single time."
+    },
+    {
+      "id": 247,
+      "theme": "anime",
+      "sub_theme": "チェンソーマン",
+      "ja": "この作品のテーマは夢と欲望だと私は解釈しています。",
+      "en": "I interpret the theme of this work as dreams and desires."
+    },
+    {
+      "id": 248,
+      "theme": "anime",
+      "sub_theme": "ヴァイオレット・エヴァーガーデン",
+      "ja": "この作品を見てから手紙の素晴らしさを再認識しました。",
+      "en": "After watching this work, I rediscovered the wonder of letters."
+    },
+    {
+      "id": 249,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "社内コミュニケーションの改善が生産性向上につながります。",
+      "en": "Improving internal communication leads to increased productivity."
+    },
+    {
+      "id": 250,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "このキャンペーンの効果を次の会議で報告します。",
+      "en": "I will report on the results of this campaign at the next meeting."
+    },
+    {
+      "id": 251,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "ターゲット層のペルソナを改めて設定し直しました。",
+      "en": "We redefined the personas of our target audience."
+    },
+    {
+      "id": 252,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "コンテンツマーケティングへの投資を増やす方針です。",
+      "en": "Our policy is to increase investment in content marketing."
+    },
+    {
+      "id": 253,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "メタバース関連ビジネスへの参入を検討しています。",
+      "en": "We are considering entering metaverse-related businesses."
+    },
+    {
+      "id": 254,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "NFTを活用したファンエコノミーの構築を目指しています。",
+      "en": "We aim to build a fan economy utilizing NFTs."
+    },
+    {
+      "id": 255,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "オフライン視聴機能の追加がユーザー満足度を上げました。",
+      "en": "Adding an offline viewing feature improved user satisfaction."
+    },
+    {
+      "id": 256,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "コンテンツレコメンドのアルゴリズムを改善しました。",
+      "en": "We improved the content recommendation algorithm."
+    },
+    {
+      "id": 257,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "リアルとオンラインを組み合わせたハイブリッドイベントを開催しました。",
+      "en": "We held a hybrid event combining in-person and online participation."
+    },
+    {
+      "id": 258,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "チケット転売対策として本人確認を強化しました。",
+      "en": "We strengthened identity verification as a countermeasure against ticket scalping."
+    },
+    {
+      "id": 259,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "インバウンド需要を取り込む戦略を強化しています。",
+      "en": "We are strengthening our strategy to capture inbound demand."
+    },
+    {
+      "id": 260,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "海外での認知度向上のため国際映画祭への出展を決めました。",
+      "en": "We decided to participate in international film festivals to raise overseas awareness."
+    },
+    {
+      "id": 261,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "多様なキャストを起用することでより多くの視聴者に届けたいと考えています。",
+      "en": "By casting a diverse range of talent, we hope to reach a wider audience."
+    },
+    {
+      "id": 262,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "視聴者参加型のコンテンツ制作に挑戦しています。",
+      "en": "We are challenging ourselves to create content with viewer participation."
+    },
+    {
+      "id": 263,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "グローバルで活躍できるアーティストの発掘に注力しています。",
+      "en": "We are focusing on discovering artists who can perform on a global stage."
+    },
+    {
+      "id": 264,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "そのタレントは短期間で国民的知名度を獲得しました。",
+      "en": "The talent gained nationwide recognition in a short period of time."
+    },
+    {
+      "id": 265,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "今回の協業はお互いの強みを活かせる良い機会だと思います。",
+      "en": "I believe this collaboration is a great opportunity for both parties to leverage their respective strengths."
+    },
+    {
+      "id": 266,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "詳細な条件については担当者同士で詰めていただければと思います。",
+      "en": "I would appreciate it if the responsible parties could work out the detailed terms between them."
+    },
+    {
+      "id": 267,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "ユーザーのドロップオフポイントを特定して改善に取り組みます。",
+      "en": "We will identify user drop-off points and work on improvements."
+    },
+    {
+      "id": 268,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "このデータから見えてくるトレンドを戦略に反映させます。",
+      "en": "We will reflect the trends visible from this data into our strategy."
+    },
+    {
+      "id": 269,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "マイルストーンを設定してチーム全体で共有しています。",
+      "en": "We have set milestones and shared them across the entire team."
+    },
+    {
+      "id": 270,
+      "theme": "entertainment_business",
+      "sub_theme": "プロジェクト管理",
+      "ja": "想定外のリスクが発生したため、対応策を即座に検討しました。",
+      "en": "An unforeseen risk arose, so we immediately considered countermeasures."
+    },
+    {
+      "id": 271,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "知的財産の保護を強化するための社内規定を整備しました。",
+      "en": "We established internal regulations to strengthen the protection of intellectual property."
+    },
+    {
+      "id": 272,
+      "theme": "entertainment_business",
+      "sub_theme": "契約・権利",
+      "ja": "そのコンテンツの原作使用料について合意しました。",
+      "en": "We reached an agreement on the original work usage fee for the content."
+    },
+    {
+      "id": 273,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "このプロジェクトは業界の新たなスタンダードになり得ると思います。",
+      "en": "I believe this project has the potential to become a new industry standard."
+    },
+    {
+      "id": 274,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "フィードバックを真摯に受け止めて改善を続けます。",
+      "en": "We will take feedback seriously and continue to make improvements."
+    },
+    {
+      "id": 275,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "長期的な視点で持続可能なビジネスを構築したいと思います。",
+      "en": "We want to build a sustainable business from a long-term perspective."
+    },
+    {
+      "id": 276,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "社内のイノベーション文化を醸成することが重要です。",
+      "en": "It is important to cultivate a culture of innovation within the company."
+    },
+    {
+      "id": 277,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "顧客体験の向上が最終的な差別化要因になります。",
+      "en": "Improving the customer experience will ultimately be the key differentiator."
+    },
+    {
+      "id": 278,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "今期の振り返りをチームで行い、来期の計画に活かします。",
+      "en": "We will conduct a team retrospective of this term and apply the insights to next term's plan."
+    },
+    {
+      "id": 279,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "このプロダクトは市場のニーズに合致していると確信しています。",
+      "en": "I am confident that this product aligns with the needs of the market."
+    },
+    {
+      "id": 280,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "意思決定のスピードを上げることが競争力につながります。",
+      "en": "Increasing the speed of decision-making leads to competitiveness."
+    },
+    {
+      "id": 281,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメは大人にこそ見てほしい作品だと思います。",
+      "en": "I think this anime is something I especially want adults to watch."
+    },
+    {
+      "id": 282,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "映像の動きがなめらかで、見ていて気持ちがよかったです。",
+      "en": "The animation was so smooth that it felt wonderful to watch."
+    },
+    {
+      "id": 283,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このシーンはアニメ史に残る名シーンだと思います。",
+      "en": "I think this scene is one of the greatest scenes in anime history."
+    },
+    {
+      "id": 284,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメを見るきっかけをくれた友達に感謝しています。",
+      "en": "I am grateful to the friend who gave me the opportunity to watch this anime."
+    },
+    {
+      "id": 285,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "ストーリーだけでなく、キャラクターデザインも好きです。",
+      "en": "I love not only the story but also the character designs."
+    },
+    {
+      "id": 286,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このアニメの哲学的なテーマについて友人と議論しました。",
+      "en": "I discussed the philosophical themes of this anime with a friend."
+    },
+    {
+      "id": 287,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "結末に賛否はあるものの、挑戦的な終わり方は評価しています。",
+      "en": "While opinions on the ending are divided, I appreciate the bold way it concluded."
+    },
+    {
+      "id": 288,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "作品の舞台となった場所を実際に訪れて感動しました。",
+      "en": "I was moved when I actually visited the place that served as the setting for the work."
+    },
+    {
+      "id": 289,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "このキャラクターの考え方が自分の仕事観に影響を与えました。",
+      "en": "This character's way of thinking has influenced my own view of work."
+    },
+    {
+      "id": 290,
+      "theme": "anime",
+      "sub_theme": "アニメ全般",
+      "ja": "見るたびに新しい解釈ができる奥深い作品です。",
+      "en": "This is a work with such depth that you can find new interpretations every time you watch it."
+    },
+    {
+      "id": 291,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス全般",
+      "ja": "このプロジェクトを成功させるためにチーム一丸となっています。",
+      "en": "The entire team is united in making this project a success."
+    },
+    {
+      "id": 292,
+      "theme": "entertainment_business",
+      "sub_theme": "マーケティング",
+      "ja": "ユーザーの声をもとにプロダクトの方向性を修正しました。",
+      "en": "We revised the direction of the product based on user feedback."
+    },
+    {
+      "id": 293,
+      "theme": "entertainment_business",
+      "sub_theme": "業界動向",
+      "ja": "エンタメ業界におけるAI活用の可能性は非常に大きいと感じています。",
+      "en": "I feel that the potential for AI utilization in the entertainment industry is enormous."
+    },
+    {
+      "id": 294,
+      "theme": "entertainment_business",
+      "sub_theme": "ビジネス交渉",
+      "ja": "このパートナーシップは双方の成長を加速させると確信しています。",
+      "en": "I am confident that this partnership will accelerate the growth of both parties."
+    },
+    {
+      "id": 295,
+      "theme": "entertainment_business",
+      "sub_theme": "コンテンツ制作",
+      "ja": "ユーザーが没入できるような体験設計を重視しています。",
+      "en": "We place great importance on designing experiences that users can fully immerse themselves in."
+    },
+    {
+      "id": 296,
+      "theme": "entertainment_business",
+      "sub_theme": "配信・ストリーミング",
+      "ja": "ユーザーの離脱を防ぐためにコンテンツの更新頻度を上げました。",
+      "en": "We increased the frequency of content updates to prevent user churn."
+    },
+    {
+      "id": 297,
+      "theme": "entertainment_business",
+      "sub_theme": "興行・イベント",
+      "ja": "来場者の体験向上のためにアプリを活用したサービスを導入しました。",
+      "en": "We introduced app-based services to improve the experience for attendees."
+    },
+    {
+      "id": 298,
+      "theme": "entertainment_business",
+      "sub_theme": "海外展開",
+      "ja": "現地のキーパーソンとのネットワーク構築が成功の鍵でした。",
+      "en": "Building a network with key people in the local market was the key to success."
+    },
+    {
+      "id": 299,
+      "theme": "entertainment_business",
+      "sub_theme": "タレント・アーティスト",
+      "ja": "そのアーティストのファン層は驚くほど幅広い年齢層にわたっています。",
+      "en": "The artist's fan base spans an astonishingly wide range of age groups."
+    },
+    {
+      "id": 300,
+      "theme": "entertainment_business",
+      "sub_theme": "データ・分析",
+      "ja": "このデータは私たちのビジネス仮説を裏付けるものでした。",
+      "en": "This data supported our business hypothesis."
+    }
+  ]
+}
